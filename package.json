@@ -1,0 +1,27 @@
+{
+  "name": "danielkosharek.com",
+  "version": "1.0.0",
+  "description": "A gallery of Daniel Koshark's paintings",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakubsvec001/danielkosharek.com.git"
+  },
+  "keywords": [
+    "art",
+    "gallery"
+  ],
+  "author": "jakubsvec001",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jakubsvec001/danielkosharek.com/issues"
+  },
+  "homepage": "https://github.com/jakubsvec001/danielkosharek.com#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
