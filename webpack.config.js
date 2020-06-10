@@ -1,4 +1,6 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 const ENTRY = path.resolve(__dirname, 'src', 'src_index');
 const OUT = path.resolve(__dirname, './public');
 
@@ -11,6 +13,10 @@ module.exports = {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
+      },
+      {
+        test: /\.s?css$/,
+        oneOf,
       },
     ],
   },
