@@ -1,5 +1,5 @@
 const path = require('path');
-const ENTRY = path.resplve(__dirname, 'src', 'src_index.ts');
+const ENTRY = path.resolve(__dirname, 'src', 'src_index');
 const OUT = path.resolve(__dirname, './public');
 
 module.exports = {
