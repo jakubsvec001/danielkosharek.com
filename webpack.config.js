@@ -1,12 +1,11 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const webpack = require('webpack')
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 
 const isDevelopment = process.env.NODE_ENV === 'development';
-const ENTRY = path.resolve(__dirname, 'src', 'src_index');
+const ENTRY = path.resolve(__dirname, 'src', 'src_index.tsx');
 const OUT = path.resolve(__dirname, './public');
 
 
@@ -14,7 +13,7 @@ module.exports = {
   mode: 'development',
   entry: ENTRY,
   output: {
-    filename: 'index.[contenthash].bundle.js',
+    filename: isDevelopment ? 'index.bundle.js' : 'index.[contenthash].bundle.js',
     path: OUT,
   },
   module: {
@@ -92,7 +91,6 @@ module.exports = {
       appMountId: 'root',
       favicon: 'src/assets/site_favicon.png',
     }),
-    new CleanWebpackPlugin(),
   ],
   resolve: {
     extensions: ['.scss', '.tsx', '.ts', '.js'],

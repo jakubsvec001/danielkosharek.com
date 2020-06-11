@@ -2,7 +2,12 @@
 // Please do not change this file!
 declare namespace SrcIndexScssNamespace {
   export interface ISrcIndexScss {
-    "main-container": string;
+    file: string;
+    mappings: string;
+    names: string;
+    sources: string;
+    sourcesContent: string;
+    version: string;
   }
 }
 

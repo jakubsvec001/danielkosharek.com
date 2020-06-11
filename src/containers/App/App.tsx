@@ -1,14 +1,11 @@
 import * as React from 'react';
-import StyledHello from '../../components/StyledHello/StyledHello';
 
-const App: React.FC= () => {
-
+const App: React.FC = () => {
   return (
     <div>
-      <StyledHello />
-      hello
+      hello there
     </div>
-  )
-}
+  );
+};
 
 export default App;
