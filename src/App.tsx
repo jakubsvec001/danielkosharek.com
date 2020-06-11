@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Header from './containers/Header/Header';
-import Footer from './containers/Footer/Footer';
+import Header from './containers/HeaderSection/HeaderSection';
+import Footer from './containers/FooterSection/FooterSection';
 import LandingPage from './containers/LandingPage/LandingPage';
 
 const App: React.FC = () => {
