@@ -1,0 +1,10 @@
+$primary-background: #f8f8f8;
+$secondary-background: white;
+
+body {
+  background-color: $primary-background;
+}
+
+.main-container {
+  background-color: $secondary-background;
+}
