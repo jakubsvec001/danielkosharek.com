@@ -1,7 +1,0 @@
-// $background-color: #f8f8f8;
-// $main-font: arial;
-
-.body {
-  background-color: black;
-  font-family: Arial, Helvetica, sans-serif;
-}

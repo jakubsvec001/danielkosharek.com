@@ -1,10 +1,7 @@
 $primary-background: #f8f8f8;
-$secondary-background: white;
+$secondary-background: magenta;
 
 body {
   background-color: $primary-background;
-}
-
-.main-container {
-  background-color: $secondary-background;
+  // margin: 0 auto;
 }
