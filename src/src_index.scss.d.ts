@@ -2,12 +2,8 @@
 // Please do not change this file!
 declare namespace SrcIndexScssNamespace {
   export interface ISrcIndexScss {
-    file: string;
-    mappings: string;
-    names: string;
-    sources: string;
-    sourcesContent: string;
-    version: string;
+    "site-container": string;
+    "site-flexbox": string;
   }
 }
 
