@@ -6,6 +6,7 @@ declare namespace SrcIndexScssNamespace {
     footer: string;
     header: string;
     "landing-page": string;
+    padding: string;
     "site-container": string;
     "site-flexbox": string;
   }

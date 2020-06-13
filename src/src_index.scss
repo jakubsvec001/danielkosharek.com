@@ -30,8 +30,8 @@ $padding: 10px;
 * {
   margin: 0 auto;
   box-sizing: border-box;
-  letter-spacing: 0.05em;
-  line-height: 1.5em;
+  letter-spacing: 0.03em;
+  line-height: 1.3em;
   @media screen and (min-width: 600px){
     letter-spacing: 0.05em;
     line-height: 1.5em;
@@ -86,9 +86,9 @@ body {
   // display: none;
   position: block;
   width: 100%;
-  padding: 10px;
+  padding: $padding;
   min-height: 90px;
-  overflow: scroll;
+  overflow: hidden;
   height: 200px;
   background-color: white;
   opacity: $opacity;
@@ -97,7 +97,7 @@ body {
   &:hover{
     background-color: $secondary-background;
   }
-  &:hover blockquote {
+  &:hover > blockquote {
     border-left: 4px solid $primary-background;
   }
   @media screen and (min-width: $tablet-dim) {
@@ -105,7 +105,8 @@ body {
     z-index: 100;
     width: 300px;
     right: 10px;
-    bottom: 10px;
+    bottom: 50px;
+    box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.52);
     // display: none;
   }
 }
@@ -126,6 +127,8 @@ body {
 }
 
 blockquote {
+  display: block;
+  padding: $padding;
   border-left: 4px solid $secondary-background;
   margin: 5px 10px 5px 10px;
   padding-left: 20px;
@@ -133,4 +136,9 @@ blockquote {
 
 p, h1, h2, h3, h4 {
   padding-bottom: 1 rem;
+  text-align: justify;
+}
+
+.padding{
+  padding: $padding;
 }
