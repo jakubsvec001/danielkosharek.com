@@ -1,22 +1,20 @@
 import * as React from 'react';
-import HeaderSection from './containers/HeaderSection/HeaderSection';
-import FooterSection from './containers/FooterSection/FooterSection';
-import MainContentSection from './containers/MainContentSection/MainContentSection';
-import LandingPage from './containers/LandingPage/LandingPage';
+import Header_section from './containers/||~0~||_Header_section/Header_section';
+import Main_section from './containers/||~1~||_Main_section/Main_section'
+import Footer_section from './containers/||~2~||_Footer_section/Footer_section'
+import LandingPage_view from './containers/||4||_LandingPage_view/LandingPage_view';
+import Announcement_view from './containers/||0||_AnnouncementFloater_view/AnnouncementFloater_view';
 import * as style from './src_index.scss';
 
 const App: React.FC = () => {
   return (
     <div className={style["site-flexbox"]}>
-      <div className={style['site-container']}>
-        <HeaderSection/>
-        <MainContentSection>
-          <main>
-            <LandingPage />
-          </main>
-        </MainContentSection>
-        <FooterSection/>
-      </div>
+      <Header_section />
+      <Main_section>
+        <Announcement_view /> 
+        <LandingPage_view />
+      </Main_section>
+      <Footer_section/>
     </div>
   );
 };
