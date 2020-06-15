@@ -1,16 +1,19 @@
 import * as React from 'react';
 import * as style from '../../src_index.scss';
-import img from '../../assets/Measure_Of_Time_4000px/April.21.2013_4000px.jpg';
+import ImageHero from '../../components/||~2~||_Image_hero/Image_hero'
+import img1 from '../../assets/Measure_Of_Time_1000px/July.23.2017_1000px.jpg';
+import img2 from '../../assets/Measure_Of_Time_1000px/May.22.2018_2_1000px.jpg';
 
 const LandingPage_view: React.FC = () => {
   return (
     <div className={style["landing-page"]}>
       Landing Page
       <div>
-        <img src={img}/>
+        <ImageHero image={img1}/>
+        <ImageHero image={img2}/>
       </div>
     </div>
   )
 }
-//alt='Painting: "July.9.2011" by Daniel Kosharek' 
+
 export default LandingPage_view;
