@@ -9,7 +9,10 @@ interface Iprops {
 
 const Image_hero: React.FC<Iprops> = (props) => {
   return (
-    <ReactImageZoom width={300} height={300} zoomWidth={300} img={props.image} zoomPosition="original" />
+    <div style={{height: '300px', width: '300px'}}>
+      <ReactImageZoom width={300} height={300} zoomWidth={300} img={props.image} zoomPosition="original" />
+    </div>
+
   )
 }
 
