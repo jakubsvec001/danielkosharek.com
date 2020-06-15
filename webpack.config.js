@@ -3,17 +3,17 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
-
 const isDevelopment = process.env.NODE_ENV === 'development';
 const ENTRY = path.resolve(__dirname, 'src', 'src_index.tsx');
 const OUT = path.resolve(__dirname, './public');
-
 
 module.exports = {
   mode: 'development',
   entry: ENTRY,
   output: {
-    filename: isDevelopment ? 'index.bundle.js' : 'index.[contenthash].bundle.js',
+    filename: isDevelopment
+      ? 'index.bundle.js'
+      : 'index.[contenthash].bundle.js',
     path: OUT,
   },
   module: {
@@ -73,6 +73,14 @@ module.exports = {
             options: {
               sourceMap: isDevelopment,
             },
+          },
+        ],
+      },
+      {
+        test: /\.(png|jpeg|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
           },
         ],
       },

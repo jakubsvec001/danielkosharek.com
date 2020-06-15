@@ -1,12 +1,13 @@
 import * as React from 'react';
 import * as style from '../../src_index.scss';
+import * as img from '../../assets/Measure_Of_Time_1000px/April.21.2013_1000px.jpg';
 
 const LandingPage_view: React.FC = () => {
   return (
     <div className={style["landing-page"]}>
       Landing Page
       <div>
-        <img style={{width: '300px'}} src='../../assets/July.9.2011.png' />
+        <img />
       </div>
     </div>
   )
