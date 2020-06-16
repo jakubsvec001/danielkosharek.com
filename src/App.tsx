@@ -7,12 +7,19 @@ import Announcement_view from './containers/||4||_Announcement_view/Announcement
 import * as style from './src_index.scss';
 
 const App: React.FC = () => {
+
+  const [isAnnouncement, setIsAnnouncement] = React.useState(true);
+
+  React.useEffect(()=>{
+    setTimeout(() => setIsAnnouncement(!isAnnouncement), 1000)
+  }, [])
+
   return (
     <div className={style["site-flexbox"]}>
       <Header_section />
       <Main_section>
         <div className={style.padding}>
-          <Announcement_view /> 
+          {isAnnouncement && <Announcement_view /> }
         </div>
         <LandingPage_view />
       </Main_section>
