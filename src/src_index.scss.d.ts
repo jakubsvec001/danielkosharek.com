@@ -7,7 +7,6 @@ declare namespace SrcIndexScssNamespace {
     header: string;
     image: string;
     "img-hover-zoom": string;
-    "img-hover-zoom--brightness": string;
     "landing-page": string;
     padding: string;
     "site-container": string;
