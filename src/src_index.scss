@@ -1,5 +1,12 @@
 /////////////////////////////////////////////////////////////
-
+@mixin font($font-family, $font-file) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-file+'.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
 
 $primary-background: #eeeeee;
 $secondary-background: white;
@@ -38,7 +45,7 @@ $padding: 10px;
   }
 }
 
-
+@include font('Bodoni-72', 'TrueType/Bodoni-72-Bold');
 // rule sets
 
 body {
@@ -50,6 +57,7 @@ body {
 }
 
 .site-flexbox {
+  @include default-width;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -68,6 +76,9 @@ body {
   border: $debug-border;
 }
 
+.title {
+  font-family: Bodoni-72, Ariel
+}
 .header {
   @include default-width;
   position: sticky;
