@@ -11,6 +11,7 @@ declare namespace SrcIndexScssNamespace {
     padding: string;
     "site-container": string;
     "site-flexbox": string;
+    title: string;
   }
 }
 

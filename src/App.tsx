@@ -18,7 +18,7 @@ const App: React.FC = () => {
     <div className={style["site-flexbox"]}>
       <Header_section />
       <Main_section>
-        <div className={style.padding}>
+        <div>
           {isAnnouncement && <Announcement_view /> }
         </div>
         <LandingPage_view />

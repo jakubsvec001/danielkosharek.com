@@ -4,7 +4,9 @@ import * as style from '../../src_index.scss';
 const Header: React.FC = () => {
   return (
     <header className={style.header}>
-      Header
+      <p className={style.title}>
+        Header
+      </p> 
     </header>
   )
 }
