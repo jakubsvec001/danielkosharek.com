@@ -1,11 +1,11 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const isDevelopment = process.env.NODE_ENV === 'development';
-const ENTRY = path.resolve(__dirname, 'src', 'src_index.tsx');
+const ENTRY = path.resolve(__dirname, 'src', 'index__src.jsx');
 const OUT = path.resolve(__dirname, './public');
+const FAVICON = path.resolve(__dirname, 'src', '_assets', 'Measure_Of_Time_100px', 'April.9.2011_100px.jpg')
+console.log("FAVICON", FAVICON)
 
 module.exports = {
   mode: 'development',
@@ -14,13 +14,13 @@ module.exports = {
     filename: isDevelopment
       ? 'index.bundle.js'
       : 'index.[contenthash].bundle.js',
-    path: OUT,
+    publicPath: OUT,
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        use: 'babel-loader',
+        use: ['babel-loader'],
         exclude: /node_modules/,
       },
       {
@@ -46,21 +46,17 @@ module.exports = {
     ],
   },
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: isDevelopment ? '[name].css' : '[name].[hash].css',
-      chunkFilename: isDevelopment ? '[id].css' : '[id].[hash].css',
-    }),
     new HtmlWebpackPlugin({
-      template: 'src/html_template/index.template.ejs',
+      template: 'src/_html_template/index.template.ejs',
       filename: 'index.html',
       title: 'DanielKosharek.com',
       inject: 'body',
       appMountId: 'root',
-      favicon: 'src/assets/site_favicon.png',
+      favicon: FAVICON,
     }),
   ],
   resolve: {
-    extensions: ['.js', 'jsx'],
+    extensions: ['.js', '.jsx'],
   },
   devtool: 'inline-source-map',
 };
