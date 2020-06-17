@@ -5,7 +5,7 @@ const Header: React.FC = () => {
   return (
     <header className={style.header}>
       <h1 className={style.title}>
-        DanielKosharek.com
+        Daniel Kosharek
       </h1> 
     </header>
   )
