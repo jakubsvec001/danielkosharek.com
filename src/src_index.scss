@@ -35,11 +35,11 @@ $padding: 10px;
 // reasonable global defaults
 
 * {
-  margin: 0 auto;
+  margin: 0;
   box-sizing: border-box;
   letter-spacing: 0.03em;
   line-height: 1.3em;
-  @media screen and (min-width: 600px){
+  @media screen and (min-width: 650px){
     letter-spacing: 0.05em;
     line-height: 1.5em;
   }
@@ -50,7 +50,6 @@ $padding: 10px;
 
 body {
   background-color: $primary-background;
-  margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
   font-size: $large-font-size;
   box-sizing: border-box;
@@ -70,6 +69,8 @@ body {
 
 .site-container {
   @include default-width;
+  display: flex;
+  justify-content: center;
   box-sizing: border-box;
   flex: 1 0 auto;
   background-color: $secondary-background;
@@ -174,8 +175,10 @@ p {
   border: $debug-border;
   display: flex;
   flex-direction: column;
-  width: 345px;
+  width: 340px;
   font-size: $large-font-size;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
   & img {
     flex-grow: 1;
     border: $debug-border;
@@ -190,28 +193,27 @@ p {
     align-content: start;
     width: 100%;
     font-size: $small-font-size;
-
   }
 }
 
 .collections-container {
   display: flex;
   flex-flow: column wrap;
-  @media (min-width: 660px){
-    flex-flow: row wrap;
-    justify-items: flex-start;
-    & img {
-      width: 33%;
-    }
-  }
   & img {
-    padding: 1%;
-    max-height: 100%;
-    max-width: 100%;
+    padding: 2%;
+    max-height: 340px;
+    max-width: 340px;
     transition: transform .1s ease;
   }
   & img:hover {
     transform: scale(1.05);
+  }
+  @media (min-width: 660px){
+    flex-flow: row wrap;
+    & img {
+      padding: 1%;
+      width: 33%;
+    }
   }
 }
 
