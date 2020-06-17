@@ -3,10 +3,10 @@
 declare namespace SrcIndexScssNamespace {
   export interface ISrcIndexScss {
     announcement: string;
+    "artist-statement": string;
+    "collections-container": string;
     footer: string;
     header: string;
-    image: string;
-    "img-hover-zoom": string;
     "landing-page": string;
     padding: string;
     "site-container": string;

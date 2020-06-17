@@ -9,8 +9,14 @@ interface Iprops {
 
 const Image_hero: React.FC<Iprops> = (props) => {
   return (
-    <div className={style.image}>
-      <ReactImageZoom zoomWidth={300} height={400} width={300} img={props.image} zoomPosition="original" />
+    <div>
+      <div className={style['artist-statement']}>
+        <ReactImageZoom zoomWidth={340} height={340} width={340} img={props.image} zoomPosition="original" as='img' />
+        <div className={style.padding}>
+          <h3>Artist statement here</h3>
+          <p>Hi, my name is Daniel. I paint things with implements.</p>
+        </div>
+      </div>
     </div>
   )
 }
