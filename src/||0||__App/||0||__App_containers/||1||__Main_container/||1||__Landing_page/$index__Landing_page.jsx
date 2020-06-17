@@ -8,7 +8,7 @@ import img4 from '../../assets/Measure_Of_Time_300px/May.15.2016_300px.jpg';
 import img5 from '../../assets/Measure_Of_Time_300px/July.17.2017_300px.jpg';
 import img6 from '../../assets/Measure_Of_Time_300px/April.30.2011_300px.jpg';
 
-const LandingPage_view: React.FC = () => {
+const Landing_page () => {
   return (
     <div className={style["landing-page"]}>
       <ImageHero image={img1}/>
@@ -27,4 +27,4 @@ const LandingPage_view: React.FC = () => {
   )
 }
 
-export default LandingPage_view;
+export default Landing_page;
