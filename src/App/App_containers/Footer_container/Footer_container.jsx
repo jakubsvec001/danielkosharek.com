@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import { theme } from '../../../styles/theme';
 
 const StyledFooter = styled.footer`
   flex-shrink: 0;
   border: 1px magenta solid;
-  background-color: white;
+  background-color: ${ ({theme}) => theme.canvas};
   min-height: 30px;
+  padding: ${({theme}) => theme.paddingSmall}
 `
 
 const Footer_container = () => {

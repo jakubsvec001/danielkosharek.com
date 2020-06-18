@@ -1,9 +1,10 @@
 import React, { useState, useReducer, Fragment } from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { Helmet } from 'react-helmet';
 
 
 import { GlobalStyle } from '../styles/GlobalStyle';
+import { theme } from '../styles/theme';
 
 import Header_container from './App_containers/Header_container/Header_container';
 import Footer_container from './App_containers/Footer_container/Footer_container';
@@ -16,13 +17,13 @@ import Modal_container from './App_containers/Modal_container/Modal_container';
 // Define App style layout
 const StyledApp = styled.div`
   margin: auto;
-  width: 700px;
+  width: 600px;
   max-width: 90%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  border: 1px solid magenta;
+  border: ${ ({theme}) => theme.debugBorder};
 `
 
 const App = () => {
@@ -40,11 +41,12 @@ const App = () => {
   };
 
   return (
-    <Fragment>
-      <Helmet>
-        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
-      </Helmet>
-      <GlobalStyle />
+    <ThemeProvider theme={ theme } >
+      <Fragment>
+        <Helmet>
+          <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+        </Helmet>
+        <GlobalStyle />
         <StyledApp>
           {isModal && <Modal_container />}
           <Header_container />
@@ -53,7 +55,8 @@ const App = () => {
             </Article_container>
           <Footer_container />
         </StyledApp>
-    </Fragment>
+      </Fragment>
+    </ThemeProvider>
   )
 }
 

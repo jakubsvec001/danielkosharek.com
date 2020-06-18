@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const isDevelopment = process.env.NODE_ENV === 'development';
 const ENTRY = path.resolve(__dirname, 'src', 'index__src.jsx');
 const OUT = path.resolve(__dirname, './public');
-const FAVICON = path.resolve(__dirname, 'src', 'assets', 'Measure_Of_Time_100px', 'April.9.2011_100px.jpg')
+const FAVICON = path.resolve(__dirname, 'src', 'assets', 'images', 'Measure_Of_Time_100px', 'April.9.2011_100px.jpg')
 
 module.exports = {
   mode: 'development',
@@ -25,10 +25,14 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(png|jpeg|jpg|gif)$/i,
+        test: /\.(png|jpeg|jpg|gif|svg)$/i,
         use: [
           {
             loader: 'url-loader',
+            options: {
+              limit: 8192,
+              name: 'images/[hash]-[name].[ext]',
+            }
           },
         ],
       },
