@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import Title_component from './Title_component';
 
 const StyledHeader = styled.main`
+  display: flex;
+  flex-flow: row nowrap;
   background-color: white;
   height: 60px;
   flex-shrink: 0;
@@ -13,7 +15,8 @@ const StyledHeader = styled.main`
 const Header_container = () => {
   return (
     <StyledHeader>
-      <Title_component />
+      <h1>Daniel Kosharek</h1>
+
     </StyledHeader>
   )
 }
