@@ -1,5 +1,7 @@
 import React, { useState, useReducer, Fragment } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
+import { Helmet } from 'react-helmet';
+
 
 import { GlobalStyle } from '../styles/GlobalStyle';
 
@@ -39,15 +41,18 @@ const App = () => {
 
   return (
     <Fragment>
+      <Helmet>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+      </Helmet>
       <GlobalStyle />
-      <StyledApp>
-        {isModal && <Modal_container />}
-        <Header_container />
-        <Article_container>
-          I'm the main article here.
-        </Article_container>
-        <Footer_container />
-      </StyledApp>
+        <StyledApp>
+          {isModal && <Modal_container />}
+          <Header_container />
+            <Article_container>
+              I'm the main article here.
+            </Article_container>
+          <Footer_container />
+        </StyledApp>
     </Fragment>
   )
 }
