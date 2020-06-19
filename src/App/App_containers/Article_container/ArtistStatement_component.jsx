@@ -4,6 +4,8 @@ import ZoomImg from 'react-image-zoom';
 
 import heroImage from './April.9.2011_1000px.jpg';
 
+const zoomImageDim = 350;
+
 const StyledArtistStatement = styled.div`
   display: flex;
   flex-flow: row wrap;
@@ -20,13 +22,14 @@ const StyledText = styled.div`
   padding-left: ${({ theme }) => theme.paddingSmall};
 `;
 
+
 const ArtistStatement_component = () => {
   return (
     <StyledArtistStatement>
       <ZoomImg
-        width={275}
-        height={275}
-        zoomWidth={275}
+        width={zoomImageDim}
+        height={zoomImageDim}
+        zoomWidth={zoomImageDim}
         img={heroImage}
         zoomPosition="original"
         as="img"
