@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Router, Link } from 'react-router-dom';
+import { Router, NavLink } from 'react-router-dom';
 
 
 const StyledHeader = styled.header`
@@ -23,11 +23,10 @@ const StyledTitle = styled.h1`
 const Header_container = () => {
   return (
     <StyledHeader>
-      <StyledTitle>Daniel Kosharek</StyledTitle>
+      <NavLink to="/"><StyledTitle>Daniel Kosharek</StyledTitle></NavLink>
       <nav>
-        <Link to="/">Menu</Link>
-        <Link to='/about'>About</Link>
-        <Link to='/framing'>Framing</Link>
+        <NavLink to='/about'>About</NavLink>
+        <NavLink to='/framing'>Framing</NavLink>
       </nav>
     </StyledHeader>
   )
