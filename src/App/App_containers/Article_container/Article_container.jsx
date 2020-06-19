@@ -4,7 +4,7 @@ import { Route } from 'react-router-dom';
 
 import { theme } from '../../../styles/theme';
 
-import Landing_article from './Landing_article';
+import Landing_article from './LandingArticle_container/Landing_article';
 
 const StyledArticle = styled.main`
   /* border: 1px solid magenta; */

@@ -27,8 +27,9 @@ const Header_container = () => {
     <StyledHeader>
       <StyledNavLink to="/"><StyledTitle>Daniel Kosharek</StyledTitle></StyledNavLink>
       <nav>
-        <StyledNavLink to='/about' className='disabled-link'>About</StyledNavLink>
+        <StyledNavLink to='/'>Collections</StyledNavLink>
         <StyledNavLink to='/framing'>Framing</StyledNavLink>
+        <StyledNavLink to='/about' className='disabled-link'>About</StyledNavLink>
         <StyledNavLink to='/contact'>Contact</StyledNavLink>
       </nav>
     </StyledHeader>
