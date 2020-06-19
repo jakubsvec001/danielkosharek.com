@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Route } from 'react-router-dom';
 
 import { theme } from '../../../styles/theme';
 
@@ -25,7 +26,9 @@ const Article = ({ children }) => {
   return (
     <StyledArticle>
       <StyledMain>
-        <Landing_article />
+        <Route path='/' exact component={Landing_article} />
+        <Route path='/framing' exact component={()=><h1>Framing</h1>}/>
+        <Route path='/about' exact component={()=><h1>About</h1>}/>
       </StyledMain>
     </StyledArticle>
   );

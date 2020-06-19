@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Router, Link } from 'react-router-dom';
 
 
 const StyledHeader = styled.header`
@@ -18,11 +19,16 @@ const StyledTitle = styled.h1`
   white-space: nowrap;
 `
 
+
 const Header_container = () => {
   return (
     <StyledHeader>
       <StyledTitle>Daniel Kosharek</StyledTitle>
-      <div>Menu</div>
+      <nav>
+        <Link to="/">Menu</Link>
+        <Link to='/about'>About</Link>
+        <Link to='/framing'>Framing</Link>
+      </nav>
     </StyledHeader>
   )
 }

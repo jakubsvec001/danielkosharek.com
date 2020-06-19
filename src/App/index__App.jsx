@@ -1,6 +1,7 @@
 import React, { useState, useReducer, Fragment } from 'react';
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { Helmet } from 'react-helmet';
+import { BrowserRouter } from 'react-router-dom';
 
 
 import { GlobalStyle } from '../styles/GlobalStyle';
@@ -41,22 +42,23 @@ const App = () => {
   };
 
   return (
-    <ThemeProvider theme={ theme } >
-      <Fragment>
-        <Helmet>
-          <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
-        </Helmet>
-        <GlobalStyle />
-        <StyledApp>
-          {isModal && <Modal_container />}
-          <Header_container />
-            <Article_container>
-              I'm the main article here.
-            </Article_container>
-          <Footer_container />
-        </StyledApp>
-      </Fragment>
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider theme={ theme } >
+        <Fragment>
+          <Helmet>
+            <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+          </Helmet>
+          <GlobalStyle />
+          <StyledApp>
+            {isModal && <Modal_container />}
+            <Header_container />
+              <Article_container>
+              </Article_container>
+            <Footer_container />
+          </StyledApp>
+        </Fragment>
+      </ThemeProvider>
+    </BrowserRouter>
   )
 }
 
