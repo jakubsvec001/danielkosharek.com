@@ -4,6 +4,7 @@ import { Router, NavLink } from 'react-router-dom';
 
 
 const StyledHeader = styled.header`
+  /* border: 1px solid magenta; */
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -11,23 +12,24 @@ const StyledHeader = styled.header`
   background-color: ${ ({theme}) => theme.canvas};
   height: 100px;
   flex-shrink: 0;
-  /* border: 1px solid magenta; */
   padding: ${ ({theme}) => theme.paddingLarge}
 `
 
 const StyledTitle = styled.h1`
   white-space: nowrap;
 `
-
+const StyledNavLink = styled(NavLink)`
+  color: inherit;
+`
 
 const Header_container = () => {
   return (
     <StyledHeader>
-      <NavLink to="/"><StyledTitle>Daniel Kosharek</StyledTitle></NavLink>
+      <StyledNavLink to="/"><StyledTitle>Daniel Kosharek</StyledTitle></StyledNavLink>
       <nav>
-        <NavLink to='/about' className='disabled-link'>About</NavLink>
-        <NavLink to='/framing'>Framing</NavLink>
-        <NavLink to='/contact'>Contact</NavLink>
+        <StyledNavLink to='/about' className='disabled-link'>About</StyledNavLink>
+        <StyledNavLink to='/framing'>Framing</StyledNavLink>
+        <StyledNavLink to='/contact'>Contact</StyledNavLink>
       </nav>
     </StyledHeader>
   )

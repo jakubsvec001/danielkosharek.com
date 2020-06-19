@@ -2,9 +2,6 @@
 06/19 - Add React Router Transition to animate route changes. Explore Animated and Transition Group as well.
 
 Current task: 
-  Get the nav links to stop showing up as colored. Do not allow current route's link to highlight on mouseover. Disable it.
-
-Next task:
   Add the ability to refresh page with react-router url and re-render the page without breaking
 
 Next task: explore methods of resizing the react-image-zoom component on the landing page
