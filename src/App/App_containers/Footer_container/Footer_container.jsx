@@ -7,7 +7,7 @@ const StyledFooter = styled.footer`
   background-color: ${ ({theme}) => theme.canvas};
   min-height: 30px;
   padding: ${({theme}) => theme.paddingSmall}
-`
+`;
 
 const Footer_container = () => {
   return (

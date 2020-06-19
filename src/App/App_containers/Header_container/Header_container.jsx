@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Title_component from './Title_component';
 
 const StyledHeader = styled.header`
   display: flex;
@@ -9,10 +8,10 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   background-color: ${ ({theme}) => theme.canvas};
-  height: 60px;
+  height: 100px;
   flex-shrink: 0;
-  border: 1px solid magenta;
-  padding: ${ ({theme}) => theme.paddingSmall}
+  /* border: 1px solid magenta; */
+  padding: ${ ({theme}) => theme.paddingLarge}
 `
 
 const StyledTitle = styled.h1`
