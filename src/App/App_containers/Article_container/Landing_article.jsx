@@ -1,19 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import ZoomImg from 'react-image-zoom'; 
-import ContainerDimensions from 'react-container-dimensions';
+import ArtistStatement_component from './ArtistStatement_component';
+import Collections_component from './Collections_component';
 
-import heroImage from './April.9.2011_1000px.jpg';
 
-const StyledZoom = styled.div`
-  width: 300;
-  height: 300;
-`
+
 
 const Landing_article = () => {
   return (
-    <ZoomImg width={300} height={300} zoomWidth={300} img={heroImage} zoomPosition='original' />
+    <>
+      <ArtistStatement_component/>
+      <Collections_component />
+    </>
   )
 };
 
