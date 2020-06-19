@@ -17,13 +17,13 @@ import Modal_container from './App_containers/Modal_container/Modal_container';
 // Define App style layout
 const StyledApp = styled.div`
   margin: auto;
-  width: 600px;
+  width: 800px;
   max-width: 90%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  border: ${ ({theme}) => theme.debugBorder};
+  /* border: ${ ({theme}) => theme.debugBorder}; */
 `
 
 const App = () => {

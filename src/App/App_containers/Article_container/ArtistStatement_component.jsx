@@ -12,6 +12,7 @@ const StyledArtistStatement = styled.div`
   padding: ${({ theme }) => theme.paddingSmall};
   @media screen and (min-width: 550px) {
     flex-flow: row nowrap;
+  }
 `;
 
 const StyledText = styled.div`
@@ -31,7 +32,7 @@ const ArtistStatement_component = () => {
         as="img"
       />
       <StyledText>
-        <h3>ARTIST STATEMENT HERE</h3>
+        <h3>A passion for the passage of time</h3>
         <div>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
