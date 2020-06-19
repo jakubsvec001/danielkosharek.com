@@ -1,3 +1,5 @@
 
 06/19 - Add React Router Transition to animate route changes. Explore Animated and Transition Group as well.
 
+Current task: 
+  Get the nav links to stop showing up as collored. Do not allow current route's link to highlight on mouseover. Disable it.
