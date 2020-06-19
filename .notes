@@ -1,7 +1,11 @@
 
 06/19 - Add React Router Transition to animate route changes. Explore Animated and Transition Group as well.
 
-Current task: 
+Current task:
+  Create a basic layout for the `framing` and `about` articles
+
+Next task:
   Add the ability to refresh page with react-router url and re-render the page without breaking
 
 Next task: explore methods of resizing the react-image-zoom component on the landing page
+    -explore react-media and react-responsive for this task
