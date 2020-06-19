@@ -6,12 +6,14 @@ const StyledFooter = styled.footer`
   /* border: 1px magenta solid; */
   background-color: ${ ({theme}) => theme.canvas};
   min-height: 30px;
-  padding: ${({theme}) => theme.paddingSmall}
+  padding: ${({theme}) => theme.paddingSmall};
+  padding-left: ${({ theme }) => theme.paddingLarge};
+
 `;
 
 const Footer_container = () => {
   return (
-    <StyledFooter>Footer</StyledFooter>
+    <StyledFooter as='h3'>©Daniel Kosharek {new Date().getFullYear()}</StyledFooter>
   )
 }
 
