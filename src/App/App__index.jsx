@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { Helmet } from 'react-helmet';
 import { BrowserRouter } from 'react-router-dom';
@@ -32,19 +32,17 @@ const App = () => {
 
   return (
     <BrowserRouter>
+      <Helmet>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+      </Helmet>
       <ThemeProvider theme={ theme } >
-        <Fragment>
-          <Helmet>
-            <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
-          </Helmet>
-          <GlobalStyle />
-          <StyledApp>
-            {isModal && <Modal />}
-            <Header />
-            <Page_container/>
-            <Footer />
-          </StyledApp>
-        </Fragment>
+        <GlobalStyle />
+        <StyledApp>
+          {isModal && <Modal />}
+          <Header />
+          <Page_container/>
+          <Footer />
+        </StyledApp>
       </ThemeProvider>
     </BrowserRouter>
   )
