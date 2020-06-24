@@ -4,7 +4,7 @@ const PORT = 4000;
 const app = express();
 
 
-const indexPath = path.resolve(__dirname, '../public/', 'index.html§');
+const indexPath = path.resolve(__dirname, '../public/index.html');
 console.log(indexPath)
 
 app.use(express.static('./public'));
