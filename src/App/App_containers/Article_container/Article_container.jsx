@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import { theme } from '../../../styles/theme';
 
@@ -26,9 +26,12 @@ const Article = ({ children }) => {
   return (
     <StyledArticle>
       <StyledMain>
-        <Route path='/' exact component={Landing_article} />
-        <Route path='/framing' exact component={()=><h1>Framing</h1>}/>
-        <Route path='/about' exact component={()=><h1>About</h1>}/>
+        <Switch>
+          <Route path='/' exact component={Landing_article} />
+          <Route path='/framing' exact component={()=><h1>Framing</h1>}/>
+          <Route path='/about' exact component={()=><h1>About</h1>}/>
+          <Route path='*' component={()=><h3>404</h3>} />
+        </Switch>
       </StyledMain>
     </StyledArticle>
   );

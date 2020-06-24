@@ -20,6 +20,7 @@ const StyledTitle = styled.h1`
 `
 const StyledNavLink = styled(NavLink)`
   color: inherit;
+  font-weight: 200;
 `
 
 const Header_container = () => {

@@ -52,8 +52,7 @@ const App = () => {
           <StyledApp>
             {isModal && <Modal_container />}
             <Header_container />
-              <Article_container>
-              </Article_container>
+              <Article_container/>
             <Footer_container />
           </StyledApp>
         </Fragment>
