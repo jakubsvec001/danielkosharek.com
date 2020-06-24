@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Router, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 const StyledHeader = styled.header`
@@ -21,16 +21,20 @@ const StyledTitle = styled.h1`
 const StyledNavLink = styled(NavLink)`
   color: inherit;
   font-weight: 200;
+  margin-left: 5px;
+  &.active {
+    font-weight: 400;
+  }
 `
 
 const Header_container = () => {
   return (
     <StyledHeader>
-      <StyledNavLink to="/"><StyledTitle>Daniel Kosharek</StyledTitle></StyledNavLink>
+      <StyledTitle>Daniel Kosharek</StyledTitle>
       <nav>
-        <StyledNavLink to='/'>Collections</StyledNavLink>
+        <StyledNavLink to='/collections'>Collections</StyledNavLink>
         <StyledNavLink to='/framing'>Framing</StyledNavLink>
-        <StyledNavLink to='/about' className='disabled-link'>About</StyledNavLink>
+        <StyledNavLink to='/about'>About</StyledNavLink>
         <StyledNavLink to='/contact'>Contact</StyledNavLink>
       </nav>
     </StyledHeader>

@@ -9,7 +9,7 @@ import { theme } from '../styles/theme';
 
 import Header from './App_containers/Header_container/Header';
 import Footer from './App_containers/Footer_container/Footer';
-import Page from './App_containers/Page_container/Page_container';
+import Page_container from './App_containers/Page_container/Page_container';
 import Modal from './App_containers/Modal_container/Modal';
 
 
@@ -21,7 +21,6 @@ const StyledApp = styled.div`
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  /* border: ${ ({theme}) => theme.debugBorder}; */
 `
 
 const App = () => {
@@ -32,11 +31,7 @@ const App = () => {
   };
 
   return (
-    <BrowserRouter   getUserConfirmation={(message, callback) => {
-      // this is the default behavior
-      const allowTransition = window.confirm(message);
-      callback(allowTransition);
-    }}>
+    <BrowserRouter>
       <ThemeProvider theme={ theme } >
         <Fragment>
           <Helmet>
@@ -46,7 +41,7 @@ const App = () => {
           <StyledApp>
             {isModal && <Modal />}
             <Header />
-            <Page/>
+            <Page_container/>
             <Footer />
           </StyledApp>
         </Fragment>

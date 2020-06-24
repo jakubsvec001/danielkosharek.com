@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const isDevelopment = process.env.NODE_ENV === 'development';
-const ENTRY = path.resolve(__dirname, 'src', 'index__src.jsx');
+const ENTRY = path.resolve(__dirname, 'src', 'Src__index.jsx');
 const OUT = path.resolve(__dirname, './public');
 const FAVICON = path.resolve(__dirname, 'src', 'assets', 'images', 'Measure_Of_Time_100px', 'April.9.2011_100px.jpg')
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 import Landing_page from './LandingPage/LandingPage';
 
@@ -21,11 +21,15 @@ const StyledMain = styled.div`
 `;
 
 const Page = () => {
+  
   return (
     <StyledPage>
       <StyledMain>
         <Switch>
-          <Route path='/' exact component={Landing_page} />
+          <Route path='/' exact>
+            <Redirect to='/collections'/>
+          </Route>
+          <Route path='/collections' exact component={Landing_page} />
           <Route path='/framing' exact component={()=><h1>Framing</h1>}/>
           <Route path='/about' exact component={()=><h1>About</h1>}/>
           <Route path='*' component={()=><h3>404</h3>} />
