@@ -7,10 +7,10 @@ import { BrowserRouter } from 'react-router-dom';
 import { GlobalStyle } from '../styles/GlobalStyle';
 import { theme } from '../styles/theme';
 
-import Header_container from './App_containers/Header_container/Header_container';
-import Footer_container from './App_containers/Footer_container/Footer_container';
-import Article_container from './App_containers/Article_container/Article_container';
-import Modal_container from './App_containers/Modal_container/Modal_container';
+import Header from './App_containers/Header_container/Header';
+import Footer from './App_containers/Footer_container/Footer';
+import Page from './App_containers/Page_container/Page_container';
+import Modal from './App_containers/Modal_container/Modal';
 
 
 // Define global styles
@@ -50,10 +50,10 @@ const App = () => {
           </Helmet>
           <GlobalStyle />
           <StyledApp>
-            {isModal && <Modal_container />}
-            <Header_container />
-              <Article_container/>
-            <Footer_container />
+            {isModal && <Modal />}
+            <Header />
+            <Page/>
+            <Footer />
           </StyledApp>
         </Fragment>
       </ThemeProvider>
