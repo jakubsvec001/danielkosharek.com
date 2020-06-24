@@ -16,7 +16,6 @@ app.get('/*', (req, res) => {
     }
   });
 });
-//something
 
 
 app.listen(PORT, function () {
