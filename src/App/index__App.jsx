@@ -42,7 +42,11 @@ const App = () => {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter   getUserConfirmation={(message, callback) => {
+      // this is the default behavior
+      const allowTransition = window.confirm(message);
+      callback(allowTransition);
+    }}>
       <ThemeProvider theme={ theme } >
         <Fragment>
           <Helmet>
