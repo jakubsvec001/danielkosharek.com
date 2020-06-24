@@ -8,6 +8,8 @@ const StyledFooter = styled.footer`
   min-height: 30px;
   padding: ${({ theme }) => theme.paddingSmall};
   padding-left: ${({ theme }) => theme.paddingLarge};
+  position: sticky;
+  bottom: 0;
 `;
 
 const Footer_container = () => {
