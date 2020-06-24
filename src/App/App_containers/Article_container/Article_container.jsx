@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { Route, Switch } from 'react-router-dom';
 
-import { theme } from '../../../styles/theme';
-
 import Landing_page from './LandingPage_container/Landing_page';
 
 const StyledPage = styled.main`
