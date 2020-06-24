@@ -1,5 +1,6 @@
 /node_modules
 /.vscode
 *.js.map
+*.bundle.js
 /package-lock.json
 */assets/
