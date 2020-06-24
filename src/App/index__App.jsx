@@ -1,5 +1,5 @@
-import React, { useState, useReducer, Fragment } from 'react';
-import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
+import React, { useState, Fragment } from 'react';
+import styled, { ThemeProvider } from 'styled-components';
 import { Helmet } from 'react-helmet';
 import { BrowserRouter } from 'react-router-dom';
 
@@ -13,9 +13,6 @@ import Page from './App_containers/Page_container/Page_container';
 import Modal from './App_containers/Modal_container/Modal';
 
 
-// Define global styles
-
-// Define App style layout
 const StyledApp = styled.div`
   margin: auto;
   width: 800px;
@@ -28,17 +25,10 @@ const StyledApp = styled.div`
 `
 
 const App = () => {
-
-
   const [isModal, setIsModal] = useState(false);
-  
-  
   const showModal = () => {
-  
   };
-  
   const hideModal = () => {
-  
   };
 
   return (
