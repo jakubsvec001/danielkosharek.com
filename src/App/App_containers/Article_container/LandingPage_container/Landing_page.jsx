@@ -41,7 +41,7 @@ const StyledH2 = styled.div`
 
 `
 
-const Landing_article = () => {
+const Landing_page = () => {
   return (
     <>
       <StyledArtistStatement>
@@ -77,4 +77,4 @@ const Landing_article = () => {
   );
 };
 
-export default Landing_article;
+export default Landing_page;

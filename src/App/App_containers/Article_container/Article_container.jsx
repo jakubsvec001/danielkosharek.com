@@ -4,9 +4,9 @@ import { Route, Switch } from 'react-router-dom';
 
 import { theme } from '../../../styles/theme';
 
-import Landing_article from './LandingArticle_container/Landing_article';
+import Landing_page from './LandingPage_container/Landing_page';
 
-const StyledArticle = styled.main`
+const StyledPage = styled.main`
   /* border: 1px solid magenta; */
   flex-grow: 1;
   height: 100%;
@@ -15,26 +15,26 @@ const StyledArticle = styled.main`
   padding: ${({ theme }) => theme.paddingSmall};
 `;
 
-const StyledMain = styled.article`
+const StyledMain = styled.div`
   min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: stretch;
 `;
 
-const Article = ({ children }) => {
+const Page = () => {
   return (
-    <StyledArticle>
+    <StyledPage>
       <StyledMain>
         <Switch>
-          <Route path='/' exact component={Landing_article} />
+          <Route path='/' exact component={Landing_page} />
           <Route path='/framing' exact component={()=><h1>Framing</h1>}/>
           <Route path='/about' exact component={()=><h1>About</h1>}/>
           <Route path='*' component={()=><h3>404</h3>} />
         </Switch>
       </StyledMain>
-    </StyledArticle>
+    </StyledPage>
   );
 };
 
-export default Article;
+export default Page;
