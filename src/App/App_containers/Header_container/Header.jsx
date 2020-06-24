@@ -10,9 +10,12 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   background-color: ${ ({theme}) => theme.canvas};
-  height: 100px;
   flex-shrink: 0;
-  padding: ${ ({theme}) => theme.paddingLarge}
+  padding: ${ ({theme}) => theme.paddingLarge};
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 100px;
 `
 
 const StyledTitle = styled.h1`
@@ -20,7 +23,7 @@ const StyledTitle = styled.h1`
 `
 const StyledNavLink = styled(NavLink)`
   color: inherit;
-  font-weight: 200;
+  font-weight: 300;
   margin-left: 5px;
   &.active {
     font-weight: 400;
@@ -30,7 +33,9 @@ const StyledNavLink = styled(NavLink)`
 const Header_container = () => {
   return (
     <StyledHeader>
-      <StyledTitle>Daniel Kosharek</StyledTitle>
+      <StyledNavLink to='/collections'>
+        <StyledTitle>Daniel Kosharek</StyledTitle>
+      </StyledNavLink>
       <nav>
         <StyledNavLink to='/collections'>Collections</StyledNavLink>
         <StyledNavLink to='/framing'>Framing</StyledNavLink>

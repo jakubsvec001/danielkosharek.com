@@ -7,7 +7,8 @@ import Collections_component from './Collections';
 const Landing_article = () => {
   return (
     <>
-
+      <ArtistStatement_component />
+      <Collections_component />
     </>
   );
 };
