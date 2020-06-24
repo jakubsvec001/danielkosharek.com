@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Route, Switch } from 'react-router-dom';
 
-import Landing_page from './LandingPage_container/Landing_page';
+import Landing_page from './LandingPage/LandingPage';
 
 const StyledPage = styled.main`
   /* border: 1px solid magenta; */
