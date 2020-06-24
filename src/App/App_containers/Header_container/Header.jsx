@@ -15,7 +15,8 @@ const StyledHeader = styled.header`
   position: sticky;
   top: 0;
   z-index: 1000;
-  height: 100px;
+  height: 80px;
+  opacity: 80%;
 `
 
 const StyledTitle = styled.h1`

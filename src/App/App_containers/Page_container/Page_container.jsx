@@ -8,7 +8,7 @@ import PageNotFoundPage from './PageNotFoundPage/PageNotFoundPage';
 const StyledPage = styled.main`
   /* border: 1px solid magenta; */
   flex-grow: 1;
-  margin-top: 2rem;
+  margin-top: 1rem;
   background-color: ${({ theme }) => theme.canvas};
   padding: ${({ theme }) => theme.paddingSmall};
   flex-direction: column;
