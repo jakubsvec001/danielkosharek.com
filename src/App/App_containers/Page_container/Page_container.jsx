@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
-import Landing_page from './LandingPage/LandingPage';
+import Landing_page from './CollectionsPage/CollectionsPage';
 import PageNotFoundPage from './PageNotFoundPage/PageNotFoundPage';
 
 const StyledPage = styled.main`

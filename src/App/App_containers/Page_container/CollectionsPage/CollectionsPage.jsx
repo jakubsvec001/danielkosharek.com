@@ -10,9 +10,9 @@ import collection4 from '../../../../assets/images/Measure_Of_Time_300px/July.23
 import collection5 from '../../../../assets/images/Measure_Of_Time_300px/July.9.2011_300px.jpg';
 import collection6 from '../../../../assets/images/Measure_Of_Time_300px/June.1.2015_300px.jpg';
 
-import CollectionsLink_component from './CollectionLink_component'
+import CollectionsLink_component from './CollectionLink'
 
-const zoomImageDim = 350;
+const zoomImageDim = 300;
 
 const StyledArtistStatement = styled.div`
   display: flex;
@@ -38,10 +38,9 @@ const StyledCollections = styled.div`
 
 const StyledH2 = styled.div`
   padding-left: ${({ theme }) => theme.paddingSmall };
-
 `
 
-const Landing_page = () => {
+const CollectionsPage = () => {
   return (
     <>
       <StyledArtistStatement>
@@ -77,4 +76,4 @@ const Landing_page = () => {
   );
 };
 
-export default Landing_page;
+export default CollectionsPage;
