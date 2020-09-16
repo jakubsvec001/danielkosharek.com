@@ -3,3 +3,4 @@
 *.js.map
 *.bundle.js
 /package-lock.json
+/assets/
