@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
-import Landing_page from './CollectionsPage/CollectionsPage';
+import CollectionsPage from './CollectionsPage/CollectionsPage';
 import PageNotFoundPage from './PageNotFoundPage/PageNotFoundPage';
 
 const StyledPage = styled.main`
@@ -24,7 +24,7 @@ const Page = () => {
         <Route path='/' exact>
           <Redirect to='/collections'/>
         </Route>
-        <Route path='/collections' exact component={Landing_page} />
+        <Route path='/collections' exact component={CollectionsPage} />
         <Route path='/framing' exact component={()=><h1>Framing</h1>}/>
         <Route path='/about' exact component={()=><h1>About</h1>}/>
         <Route path='*' component={PageNotFoundPage} />

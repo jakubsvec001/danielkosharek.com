@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   html, body {
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.primary};
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
-    ${'' /* min-width: 200px; */}
+    min-width: 600px;
   }
 
   h1 {
@@ -53,3 +53,5 @@ export const GlobalStyle = createGlobalStyle`
     pointer-events: none;
   }
 `;
+
+export default GlobalStyle;

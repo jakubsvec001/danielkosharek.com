@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { BrowserRouter } from 'react-router-dom';
 
 
-import { GlobalStyle } from '../styles/GlobalStyle';
+import GlobalStyle from '../styles/GlobalStyle';
 import { theme } from '../styles/theme';
 
 import Header from './App_containers/Header_container/Header';

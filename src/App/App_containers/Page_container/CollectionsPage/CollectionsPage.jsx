@@ -1,25 +1,28 @@
-import React from "react";
-import styled from "styled-components";
-import ZoomImg from "react-image-zoom";
+import React from 'react';
+import styled from 'styled-components';
+import ZoomImg from 'react-image-zoom';
 
-import heroImage from "./April.9.2011_1000px.jpg";
-import collection1 from "../../../../assets/images/Measure_Of_Time_300px/April.30.2011_300px.jpg";
-import collection2 from "../../../../assets/images/Measure_Of_Time_300px/December.17.2016_300px.jpg";
-import collection3 from "../../../../assets/images/Measure_Of_Time_300px/July.17.2017_300px.jpg";
-import collection4 from "../../../../assets/images/Measure_Of_Time_300px/July.23.2017_300px.jpg";
-import collection5 from "../../../../assets/images/Measure_Of_Time_300px/July.9.2011_300px.jpg";
-import collection6 from "../../../../assets/images/Measure_Of_Time_300px/June.1.2015_300px.jpg";
+import heroImage from './April.9.2011_1000px.jpg';
+import collection1 from '../../../../assets/images/Measure_Of_Time_300px/April.30.2011_300px.jpg';
+import collection2 from '../../../../assets/images/Measure_Of_Time_300px/December.17.2016_300px.jpg';
+import collection3 from '../../../../assets/images/Measure_Of_Time_300px/July.17.2017_300px.jpg';
+import collection4 from '../../../../assets/images/Measure_Of_Time_300px/July.23.2017_300px.jpg';
+import collection5 from '../../../../assets/images/Measure_Of_Time_300px/July.9.2011_300px.jpg';
+import collection6 from '../../../../assets/images/Measure_Of_Time_300px/June.1.2015_300px.jpg';
 
-import CollectionsLink_component from "./CollectionLink";
+import CollectionImage from './CollectionImage';
 
 const zoomImageDim = 300;
+
+const StyledPage = styled.div`
+  padding: ${({ theme }) => theme.paddingSmall};
+`;
 
 const StyledArtistStatement = styled.div`
   display: flex;
   flex-flow: row wrap;
   align-content: center;
   justify-content: center;
-  padding: ${({ theme }) => theme.paddingSmall};
   @media screen and (min-width: 550px) {
     flex-flow: row nowrap;
   }
@@ -30,7 +33,7 @@ const StyledText = styled.div`
   padding-left: ${({ theme }) => theme.paddingSmall};
 `;
 
-const StyledCollections = styled.div`
+const StyledCollection = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -40,9 +43,31 @@ const StyledH2 = styled.div`
   padding-left: ${({ theme }) => theme.paddingSmall};
 `;
 
+const StyledSelector = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+`;
+
+const StyledButton = styled.div`
+  background-color: ${({ theme }) => theme.canvas};
+
+`;
+
+const CollectionSelector = () => {
+  return (
+    <StyledSelector>
+      <StyledButton>button1</StyledButton>
+      <StyledButton>button2</StyledButton>
+      <StyledButton>button2</StyledButton>
+      <StyledButton>button2</StyledButton>
+    </StyledSelector>
+  );
+};
+
 const CollectionsPage = () => {
   return (
-    <>
+    <StyledPage>
       <StyledArtistStatement>
         <ZoomImg
           width={zoomImageDim}
@@ -64,15 +89,18 @@ const CollectionsPage = () => {
         </StyledText>
       </StyledArtistStatement>
       <StyledH2 as="h2">Collections</StyledH2>
-      <StyledCollections>
-        <CollectionsLink_component image={collection1} />
-        <CollectionsLink_component image={collection2} />
-        <CollectionsLink_component image={collection3} />
-        <CollectionsLink_component image={collection4} />
-        <CollectionsLink_component image={collection5} />
-        <CollectionsLink_component image={collection6} />
-      </StyledCollections>
-    </>
+      {/* collections navigator */}
+      <CollectionSelector />
+      {/* collections navigator */}
+      <StyledCollection>
+        <CollectionImage image={collection1} />
+        <CollectionImage image={collection2} />
+        <CollectionImage image={collection3} />
+        <CollectionImage image={collection4} />
+        <CollectionImage image={collection5} />
+        <CollectionImage image={collection6} />
+      </StyledCollection>
+    </StyledPage>
   );
 };
 

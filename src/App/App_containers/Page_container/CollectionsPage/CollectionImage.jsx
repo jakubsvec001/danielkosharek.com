@@ -14,10 +14,10 @@ const StyledCollectionsLink = styled.img`
     filter: blur(50%);
   }
 `
-const CollectionLink_component = ({image}) => {
+const CollectionImage = ({image}) => {
   return (
     <StyledCollectionsLink src={image} alt='an artistic collection by Daniel Kosharek' />
   )
 }
 
-export default CollectionLink_component;
+export default CollectionImage;
