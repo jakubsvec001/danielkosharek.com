@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.primary};
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
-    min-width: 600px;
+    min-width: 400px;
   }
 
   h1 {
@@ -42,6 +42,10 @@ const GlobalStyle = createGlobalStyle`
   img {
     height: auto;
     width: 10rem;
+  }
+
+  hr {
+    border: 1px solid ${({ theme }) => theme.secondary};
   }
 
   a {

@@ -11,7 +11,7 @@ const StyledFooter = styled.footer`
   position: sticky;
   bottom: 0;
   margin-bottom: 0;
-  opacity: 90%;
+  opacity: 95%;
 `;
 
 const Footer_container = () => {

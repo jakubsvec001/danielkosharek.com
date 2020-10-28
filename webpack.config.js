@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const isDevelopment = process.env.NODE_ENV === 'development';
 const ENTRY = path.resolve(__dirname, 'src', 'Src__index.jsx');
 const OUT = path.resolve(__dirname, './public');
-const FAVICON = path.resolve(__dirname, 'src', 'assets', 'images', 'Measure_Of_Time_100px', 'April.9.2011_100px.jpg')
+const FAVICON = path.resolve(__dirname, 'src', 'assets', 'images', 'thumbnails', 'June.11.2011_100px.jpg')
 
 module.exports = {
   mode: 'development',
