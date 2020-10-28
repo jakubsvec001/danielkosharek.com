@@ -1,16 +1,16 @@
-import React from 'react';
-import styled from 'styled-components';
-import ZoomImg from 'react-image-zoom';
+import React from "react";
+import styled from "styled-components";
+import ZoomImg from "react-image-zoom";
 
-import heroImage from './April.9.2011_1000px.jpg';
-import collection1 from '../../../../assets/images/Measure_Of_Time_300px/April.30.2011_300px.jpg';
-import collection2 from '../../../../assets/images/Measure_Of_Time_300px/December.17.2016_300px.jpg';
-import collection3 from '../../../../assets/images/Measure_Of_Time_300px/July.17.2017_300px.jpg';
-import collection4 from '../../../../assets/images/Measure_Of_Time_300px/July.23.2017_300px.jpg';
-import collection5 from '../../../../assets/images/Measure_Of_Time_300px/July.9.2011_300px.jpg';
-import collection6 from '../../../../assets/images/Measure_Of_Time_300px/June.1.2015_300px.jpg';
+import heroImage from "./April.9.2011_1000px.jpg";
+import collection1 from "../../../../assets/images/Measure_Of_Time_300px/April.30.2011_300px.jpg";
+import collection2 from "../../../../assets/images/Measure_Of_Time_300px/December.17.2016_300px.jpg";
+import collection3 from "../../../../assets/images/Measure_Of_Time_300px/July.17.2017_300px.jpg";
+import collection4 from "../../../../assets/images/Measure_Of_Time_300px/July.23.2017_300px.jpg";
+import collection5 from "../../../../assets/images/Measure_Of_Time_300px/July.9.2011_300px.jpg";
+import collection6 from "../../../../assets/images/Measure_Of_Time_300px/June.1.2015_300px.jpg";
 
-import CollectionsLink_component from './CollectionLink'
+import CollectionsLink_component from "./CollectionLink";
 
 const zoomImageDim = 300;
 
@@ -34,36 +34,36 @@ const StyledCollections = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-`
+`;
 
 const StyledH2 = styled.div`
-  padding-left: ${({ theme }) => theme.paddingSmall };
-`
+  padding-left: ${({ theme }) => theme.paddingSmall};
+`;
 
 const CollectionsPage = () => {
   return (
     <>
       <StyledArtistStatement>
-      <ZoomImg
-        width={zoomImageDim}
-        height={zoomImageDim}
-        zoomWidth={zoomImageDim}
-        img={heroImage}
-        zoomPosition="original"
-        as="img"
-      />
-      <StyledText>
-        <h3>A passion for the passage of time</h3>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit,
-        </div>
-      </StyledText>
+        <ZoomImg
+          width={zoomImageDim}
+          height={zoomImageDim}
+          zoomWidth={zoomImageDim}
+          img={heroImage}
+          zoomPosition="original"
+          as="img"
+        />
+        <StyledText>
+          <h3>A passion for the passage of time</h3>
+          <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit,
+          </div>
+        </StyledText>
       </StyledArtistStatement>
-      <StyledH2 as='h2'>Collections</StyledH2>
+      <StyledH2 as="h2">Collections</StyledH2>
       <StyledCollections>
         <CollectionsLink_component image={collection1} />
         <CollectionsLink_component image={collection2} />

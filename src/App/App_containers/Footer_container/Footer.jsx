@@ -16,7 +16,7 @@ const StyledFooter = styled.footer`
 
 const Footer_container = () => {
   return (
-    <StyledFooter as="h3">
+    <StyledFooter as="h5">
       © Daniel Kosharek {new Date().getFullYear()}
     </StyledFooter>
   );
