@@ -14,6 +14,7 @@ module.exports = {
       ? 'index.bundle.js'
       : 'index.[contenthash].bundle.js',
     path: OUT,
+    publicPath: '/',
   },
   module: {
     rules: [
