@@ -8,7 +8,6 @@ const StyledImageContainer = styled.div`
   cursor: pointer;
   flex-flow: column wrap;
   margin: 2%;
-  /* border: 1px solid #f0f; */
   height: 100%;
   width: 100%;
   transition: 0.25s all ease;
@@ -26,7 +25,6 @@ const StyledCollectionsImage = styled.img`
 `;
 
 const StyledImageCaption = styled.figcaption`
-  /* background-color: ${({ theme }) => theme.secondary}; */
   display: flex;
   width: 100%;
   padding: 4px;

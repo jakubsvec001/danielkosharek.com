@@ -1,22 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useLocation, NavLink } from 'react-router-dom';
+
 import CollectionComponent from './CollectionComponent';
-
-
-import collection1 from '../../../../assets/images/Measure_Of_Time/Measure_Of_Time_300px/April.30.2011_300px.jpg';
-import collection2 from '../../../../assets/images/Measure_Of_Time/Measure_Of_Time_300px/December.17.2016_300px.jpg';
-import collection3 from '../../../../assets/images/Measure_Of_Time/Measure_Of_Time_300px/July.17.2017_300px.jpg';
-import collection4 from '../../../../assets/images/Measure_Of_Time/Measure_Of_Time_300px/July.23.2017_300px.jpg';
-import collection5 from '../../../../assets/images/Measure_Of_Time/Measure_Of_Time_300px/July.9.2011_300px.jpg';
-import collection6 from '../../../../assets/images/Measure_Of_Time/Measure_Of_Time_300px/June.1.2015_300px.jpg';
-
-import CollectionImage from './CollectionImage';
-
 
 const StyledPage = styled.div`
   margin: ${({ theme }) => theme.paddingLarge};
 `;
-
 
 const PageHeader = styled.div`
   /* padding-left: ${({ theme }) => theme.paddingSmall}; */
@@ -26,6 +16,16 @@ const PageHeader = styled.div`
   /* border: 1px solid #ff00ff; */
   @media screen and (min-width: 600px) {
     flex-flow: row wrap;
+  }
+`;
+
+const StyledNavLink = styled(NavLink)`
+  color: inherit;
+  font-weight: 300;
+  margin-left: 5px;
+  margin-left: ${({ theme }) => theme.paddingSmall};
+  &.active {
+    font-weight: 600;
   }
 `;
 
@@ -43,17 +43,13 @@ const StyledSelector = styled.div`
   align-self: baseline;
 `;
 
-const StyledButton = styled.a`
-  background-color: ${({ theme }) => theme.canvas};
-  margin-right: ${({ theme }) => theme.paddingLarge};
-`;
-
 const CollectionSelector = () => {
+  const location = useLocation();
   return (
     <StyledSelector>
-      <StyledButton>Measure of Time</StyledButton>
-      <StyledButton>Landscapes</StyledButton>
-      <StyledButton>Additional</StyledButton>
+      <StyledNavLink to={`${location.pathname}/aMeasureOfTime`}>A Measure of Time</StyledNavLink>
+      <StyledNavLink to={`${location.pathname}/landscapes`}>Landscapes</StyledNavLink>
+      <StyledNavLink to={`${location.pathname}/additional`}>Additional</StyledNavLink>
     </StyledSelector>
   );
 };

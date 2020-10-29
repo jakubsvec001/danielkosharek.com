@@ -1,16 +1,57 @@
-import React from 'react';
+import React, { useLocation } from 'react';
 import styled from 'styled-components';
 import ZoomImg from 'react-image-zoom';
 import CollectionImage from './CollectionImage';
 
+
 import heroImage from './April.9.2011_1000px.jpg';
 
-import collection1 from '../../../../assets/images/Measure_Of_Time/Measure_Of_Time_300px/April.30.2011_300px.jpg';
-import collection2 from '../../../../assets/images/Measure_Of_Time/Measure_Of_Time_300px/December.17.2016_300px.jpg';
-import collection3 from '../../../../assets/images/Measure_Of_Time/Measure_Of_Time_300px/July.17.2017_300px.jpg';
-import collection4 from '../../../../assets/images/Measure_Of_Time/Measure_Of_Time_300px/July.23.2017_300px.jpg';
-import collection5 from '../../../../assets/images/Measure_Of_Time/Measure_Of_Time_300px/July.9.2011_300px.jpg';
-import collection6 from '../../../../assets/images/Measure_Of_Time/Measure_Of_Time_300px/June.1.2015_300px.jpg';
+
+const dates = [
+'(Sold)'
+'April.9.2011',
+'April.21.2013',
+'April.30.2011',
+'December.17.2016',
+'July.9.2011',
+'July.17.2017',
+'July.23.2017',
+'June.1.2015',
+'June.4.2019',
+'June.11.2011',
+'June.14.2017',
+'June.16.2014',
+'June.24.2017',
+'June.25.2019',
+'June.26.2011',
+'March.3.2012',
+'May.6.2011',
+'May.11.2011',
+'May.15.2016',
+'May.21.2011_1',
+'May.21.2011_2',
+'May.22.2018_1',
+'May.22.2018_2',
+'May.26.2011',
+'November.6.2016',
+'October.3.2011',
+];
+
+
+const MeasureOfTime = {
+  'April.30.2011': {
+    url: '../../../../assets/images/Measure_Of_Time/Measure_Of_Time_300px/April.30.2011_300px.jpg',
+    date: new Date(2011,4,30),
+    title: ${this.date.
+  },
+  ''
+import MeasureOfTime2 from '../../../../assets/images/Measure_Of_Time/Measure_Of_Time_300px/December.17.2016_300px.jpg';
+import MeasureOfTime3 from '../../../../assets/images/Measure_Of_Time/Measure_Of_Time_300px/July.17.2017_300px.jpg';
+import MeasureOfTime4 from '../../../../assets/images/Measure_Of_Time/Measure_Of_Time_300px/July.23.2017_300px.jpg';
+import MeasureOfTime5 from '../../../../assets/images/Measure_Of_Time/Measure_Of_Time_300px/July.9.2011_300px.jpg';
+import MeasureOfTime6 from '../../../../assets/images/Measure_Of_Time/Measure_Of_Time_300px/June.1.2015_300px.jpg';
+  
+}
 
 const zoomImageDim = 300;
 
@@ -52,6 +93,12 @@ const StyledCollection = styled.div`
 `;
 
 const CollectionComponent = () => {
+  const location = useLocation();
+  
+  if (location.pathname === 'aMeasureOfTime') {
+    images = 
+  }
+
   return (
     <>
       <StyledArtistStatement>
@@ -78,12 +125,12 @@ const CollectionComponent = () => {
       </StyledArtistStatement>
       <hr/>
       <StyledCollection>
-        <CollectionImage image={collection1} />
-        <CollectionImage image={collection2} />
-        <CollectionImage image={collection3} />
-        <CollectionImage image={collection4} />
-        <CollectionImage image={collection5} />
-        <CollectionImage image={collection6} />
+        <CollectionImage image={MeasureOfTime1} />
+        <CollectionImage image={MeasureOfTime2} />
+        <CollectionImage image={MeasureOfTime3} />
+        <CollectionImage image={MeasureOfTime4} />
+        <CollectionImage image={MeasureOfTime5} />
+        <CollectionImage image={MeasureOfTime6} />
       </StyledCollection>
     </>
   );

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { lazy, Suspense }from 'react';
 import styled from 'styled-components';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
-import CollectionsPage from './CollectionsPage/CollectionsPage';
-import PageNotFoundPage from './PageNotFoundPage/PageNotFoundPage';
+const CollectionsPage = lazy(() => import('./CollectionsPage/CollectionsPage'));
+const PageNotFoundPage = lazy(() => import('./PageNotFoundPage/PageNotFoundPage'));
 
 const StyledPage = styled.main`
   /* border: 1px solid magenta; */
@@ -20,15 +20,17 @@ const Page = () => {
   
   return (
     <StyledPage>
-      <Switch>
-        <Route path='/' exact>
-          <Redirect to='/collections'/>
-        </Route>
-        <Route path='/collections' exact component={CollectionsPage} />
-        <Route path='/framing' exact component={()=><h1>Framing</h1>}/>
-        <Route path='/about' exact component={()=><h1>About</h1>}/>
-        <Route path='*' component={PageNotFoundPage} />
-      </Switch>
+      <Suspense fallback={<h1>Loading...</h1>}>
+        <Switch>
+          <Route path='/' exact>
+            <Redirect to='/collections'/>
+          </Route>
+          <Route path='/collections' exact component={CollectionsPage} />
+          <Route path='/framing' exact component={()=><h1>Framing</h1>}/>
+          <Route path='/about' exact component={()=><h1>About</h1>}/>
+          <Route path='*' component={PageNotFoundPage} />
+        </Switch>
+      </Suspense>
     </StyledPage>
   );
 };
