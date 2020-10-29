@@ -15,10 +15,14 @@ const StyledHeader = styled.header`
   top: 0;
   z-index: 1000;
   min-height: 80px;
-  /* opacity: 95%; */
+  border-bottom: 4px solid ${({ theme }) => theme.secondary};
   @media screen and (min-width: 600px) {
     flex-flow: row wrap;
   }
+`;
+
+const StyledNav = styled.nav`
+  margin-right: ${({ theme }) => theme.paddingLarge}; 
 `;
 
 const StyledTitle = styled.h1`
@@ -31,7 +35,7 @@ const StyledNavLink = styled(NavLink)`
   margin-left: 5px;
   margin-left: ${({ theme }) => theme.paddingSmall};
   &.active {
-    font-weight: 400;
+    font-weight: 600;
   }
 `;
 
@@ -41,12 +45,12 @@ const HeaderContainer = () => {
       <StyledNavLink to="/collections">
         <StyledTitle>Daniel Kosharek</StyledTitle>
       </StyledNavLink>
-      <nav>
+      <StyledNav>
         <StyledNavLink to="/collections">Collections</StyledNavLink>
         <StyledNavLink to="/framing">Framing</StyledNavLink>
         <StyledNavLink to="/about">About</StyledNavLink>
         <StyledNavLink to="/contact">Contact</StyledNavLink>
-      </nav>
+      </StyledNav>
     </StyledHeader>
   );
 };

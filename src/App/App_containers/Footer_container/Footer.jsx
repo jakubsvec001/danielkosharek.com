@@ -11,10 +11,9 @@ const StyledFooter = styled.footer`
   position: sticky;
   bottom: 0;
   margin-bottom: 0;
-  opacity: 95%;
 `;
 
-const Footer_container = () => {
+const FooterContainer = () => {
   return (
     <StyledFooter as="h5">
       © Daniel Kosharek {new Date().getFullYear()}
@@ -22,4 +21,4 @@ const Footer_container = () => {
   );
 };
 
-export default Footer_container;
+export default FooterContainer;
