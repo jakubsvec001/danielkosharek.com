@@ -30,10 +30,10 @@ const StyledImageCaption = styled.figcaption`
   padding: 4px;
 `;
 
-const CollectionImage = ({ image }) => {
+const CollectionImage = ({ src }) => {
   return (
     <StyledImageContainer>
-      <StyledCollectionsImage src={image} alt='a painting by Daniel Kosharek' />
+      <StyledCollectionsImage src={src} alt="a painting by Daniel Kosharek" />
       <StyledImageCaption>Title of thing and more stuff written here</StyledImageCaption>
     </StyledImageContainer>
   );

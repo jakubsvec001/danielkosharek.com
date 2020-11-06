@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useLocation, NavLink } from 'react-router-dom';
+import { useLocation, NavLink, Link } from 'react-router-dom';
 
 import CollectionComponent from './CollectionComponent';
 
@@ -44,12 +44,11 @@ const StyledSelector = styled.div`
 `;
 
 const CollectionSelector = () => {
-  const location = useLocation();
   return (
     <StyledSelector>
-      <StyledNavLink to={`${location.pathname}/aMeasureOfTime`}>A Measure of Time</StyledNavLink>
-      <StyledNavLink to={`${location.pathname}/landscapes`}>Landscapes</StyledNavLink>
-      <StyledNavLink to={`${location.pathname}/additional`}>Additional</StyledNavLink>
+      <StyledNavLink to="/collections/aMeasureOfTime" replace>A Measure of Time</StyledNavLink>
+      <StyledNavLink to="/collections/landscapes" replace>Landscapes</StyledNavLink>
+      <StyledNavLink to="/collections/additional" replace>Additional</StyledNavLink>
     </StyledSelector>
   );
 };

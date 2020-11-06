@@ -25,9 +25,9 @@ const Page = () => {
           <Route path='/' exact>
             <Redirect to='/collections'/>
           </Route>
-          <Route path='/collections' exact component={CollectionsPage} />
-          <Route path='/framing' exact component={()=><h1>Framing</h1>}/>
-          <Route path='/about' exact component={()=><h1>About</h1>}/>
+          <Route path='/collections' component={CollectionsPage} />
+          <Route path='/framing' component={()=><h1>Framing</h1>}/>
+          <Route path='/about' component={()=><h1>About</h1>}/>
           <Route path='*' component={PageNotFoundPage} />
         </Switch>
       </Suspense>
