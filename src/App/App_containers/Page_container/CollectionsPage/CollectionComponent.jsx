@@ -51,63 +51,63 @@ const landscapeList = [
     name: "Crows In The Orchard",
     src: {
       100: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_100px/CrowsInTheOrchard_100px.jpg"),
-      300: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_300px/_300px.jpg"),
-      1000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_1000px/_1000px.jpg"),
-      2000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/_2000px/landscapes_2000px.jpg"),
+      300: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_300px/CrowsInTheOrchard_300px.jpg"),
+      1000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_1000px/CrowsInTheOrchard_1000px.jpg"),
+      2000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_2000px/CrowsInTheOrchard_2000px.jpg"),
     },
   },
   {
     name: "Into Diablo Canyon",
     src: {
-      100: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_100px/_100px.jpg"),
-      300: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_300px/_300px.jpg"),
-      1000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_1000px/_1000px.jpg"),
-      2000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_2000px/_2000px.jpg"),
+      100: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_100px/IntoDiabloCanyon_100px.jpg"),
+      300: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_300px/IntoDiabloCanyon_300px.jpg"),
+      1000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_1000px/IntoDiabloCanyon_1000px.jpg"),
+      2000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_2000px/IntoDiabloCanyon_2000px.jpg"),
     },
   },
   {
     name: "La Cienega",
     src: {
-      100: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_100px/_100px.jpg"),
-      300: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_300px/_300px.jpg"),
-      1000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_1000px/_1000px.jpg"),
-      2000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_2000px/_2000px.jpg"),
+      100: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_100px/LaCienega_100px.jpg"),
+      300: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_300px/LaCienega_300px.jpg"),
+      1000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_1000px/LaCienega_1000px.jpg"),
+      2000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_2000px/LaCienega_2000px.jpg"),
     },
   },
   {
     name: "Message In The Sky",
     src: {
-      100: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_100px/_100px.jpg"),
-      300: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_300px/_300px.jpg"),
-      1000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_1000px/_1000px.jpg"),
-      2000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_2000px/_2000px.jpg"),
+      100: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_100px/MessageInTheSky_100px.jpg"),
+      300: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_300px/MessageInTheSky_300px.jpg"),
+      1000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_1000px/MessageInTheSky_1000px.jpg"),
+      2000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_2000px/MessageInTheSky_2000px.jpg"),
     },
   },
   {
     name: "Road To Roy",
     src: {
-      100: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_100px/_100px.jpg"),
-      300: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_300px/_300px.jpg"),
-      1000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_1000px/_1000px.jpg"),
-      2000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_2000px/_2000px.jpg"),
+      100: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_100px/RoadToRoy_100px.jpg"),
+      300: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_300px/RoadToRoy_300px.jpg"),
+      1000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_1000px/RoadToRoy_1000px.jpg"),
+      2000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_2000px/RoadToRoy_2000px.jpg"),
     },
   },
   {
     name: "Sliver Of River",
     src: {
-      100: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_100px/_100px.jpg"),
-      300: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_300px/_300px.jpg"),
-      1000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_1000px/_1000px.jpg"),
-      2000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_2000px/_2000px.jpg"),
+      100: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_100px/SliverOfRiver_100px.jpg"),
+      300: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_300px/SliverOfRiver_300px.jpg"),
+      1000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_1000px/SliverOfRiver_1000px.jpg"),
+      2000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_2000px/SliverOfRiver_2000px.jpg"),
     },
   },
   {
     name: "Storm Over Grand Canyon",
     src: {
-      100: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_100px/_100px.jpg"),
-      300: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_300px/_300px.jpg"),
-      1000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_1000px/_1000px.jpg"),
-      2000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/_2000px/landscape_2000px.jpg"),
+      100: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_100px/StormOverGrandCanyon_100px.jpg"),
+      300: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_300px/StormOverGrandCanyon_300px.jpg"),
+      1000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_1000px/StormOverGrandCanyon_1000px.jpg"),
+      2000: import(/* webpackMode: lazy-once */ "../../../../assets/images/landscape/landscape_2000px/StormOverGrandCanyon_2000px.jpg"),
     },
   },
 ];
@@ -400,9 +400,9 @@ const CollectionComponent = () => {
     let list;
     if (pathName === "/collections/aMeasureOfTime") {
       list = measureOfTimeList;
-    } else if (collectionName === "landscapes") {
+    } else if (pathName === "/collections/landscapes") {
       list = landscapeList;
-    } else if (collectionName === "additional") {
+    } else if (pathName === "/collections/additional") {
       list = additionalList;
     }
     list.forEach(((image) => {
