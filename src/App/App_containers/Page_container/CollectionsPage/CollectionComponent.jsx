@@ -78,7 +78,7 @@ const CollectionComponent = ({ collection }) => {
       .catch((e) => console.error(e))
     collectionList.forEach(((image) => {
       image.src['1000'].then((source) => {
-        setImageList((prevState) => [...prevState, <CollectionImage src={source.default} key={image.name} />]);
+        setImageList((prevState) => [...prevState, <CollectionImage src={source.default} title={image.name} key={image.name} />]);
       });
     }));
   }, []);
