@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import { Route, Switch, NavLink } from 'react-router-dom';
 
 import CollectionComponent from './CollectionComponent';
 
@@ -61,7 +61,11 @@ const CollectionsPage = () => {
         <CollectionSelector />
       </PageHeader>
       <hr />
-      <CollectionComponent />
+      <Switch>
+        <Route path="/collections/aMeasureOfTime" component={() => <CollectionComponent collection='aMeasureOfTime' />} />
+        <Route path="/collections/landscapes" component={() => <CollectionComponent collection='landscapes' />} />
+        <Route path="/collections/additional" component={() => <CollectionComponent collection='additional' />} />
+      </Switch>
     </StyledPage>
   );
 };

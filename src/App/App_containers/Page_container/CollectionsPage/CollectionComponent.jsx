@@ -46,64 +46,47 @@ const StyledCollection = styled.div`
   flex-flow: row wrap;
 `;
 
-
-const CollectionComponent = () => {
-  const location = useLocation();
-  const pathName = location.pathname;
-  let imageCollectionPromiseList;
+const CollectionComponent = ({ collection }) => {
   const [imageList, setImageList] = useState([]);
-  const [imageComponentList, setImageComponentList] = useState([]);
+  const [heroComponent, setHeroComponent] = useState([]);
 
   useEffect(() => {
-    let list;
-    if (pathName === "/collections/aMeasureOfTime") {
-      list = measureOfTimeList;
-    } else if (pathName === "/collections/landscapes") {
-      list = landscapeList;
-    } else if (pathName === "/collections/additional") {
-      list = additionalList;
+    let collectionList;
+    if (collection === "aMeasureOfTime") {
+      collectionList = measureOfTimeList;
+    } else if (collection === "landscapes") {
+      collectionList = landscapeList;
+    } else if (collection === "additional") {
+      collectionList = additionalList;
     }
-    list.forEach(((image) => {
-      image.src["300"].then((source)=>{
-        console.log(source.default)
-        setImageList((prevState) => {
-          return [...prevState, <CollectionImage src={source.default} key={image.name} />]
-        })
-      })
-    }));
-  }, []);
 
-  console.log(imageList)
-  // useEffect(() => {
-  //   setImageComponentList(() => {
-  //     return imageList.map((src, idx) => <CollectionImage image={src} key={src} />)
-  //   })
-  // }, [imageList]);
-
-  // console.log(imageComponentList);
-  // setImageList((prevState) => {
-  //   return Promise.all(imageCollectionPromiseList)
-  //   .then((collection) => {
-  //     console.log(collection);
-  //     return collection.map((image, idx) => (
-  //       <CollectionImage image={image} key={idx} />
-  //     ));
-  //   })
-  //   .catch((e) => console.error("error fetching images", e));
-  // })
-  return (
-    <>
-      <StyledArtistStatement>
+    collectionList[Math.floor(Math.random() * collectionList.length)].src["1000"].then((source) => {
+      setHeroComponent(() => (
         <StyledImageZoom>
           <ZoomImg
             width={zoomImageDim}
             height={zoomImageDim}
             zoomWidth={zoomImageDim}
-            img={heroImage}
+            img={source.default}
             zoomPosition="original"
             as="img"
           />
         </StyledImageZoom>
+      ));
+    });
+
+
+    collectionList.forEach(((image) => {
+      image.src['1000'].then((source) => {
+        setImageList((prevState) => [...prevState, <CollectionImage src={source.default} key={image.name} />]);
+      });
+    }));
+  }, []);
+
+  return (
+    <>
+      <StyledArtistStatement>
+        {/* {heroComponent} */}
         <StyledText>
           <h2>a measure of time</h2>
           <div>

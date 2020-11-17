@@ -23,7 +23,10 @@ const Page = () => {
       <Suspense fallback={<h1>Loading...</h1>}>
         <Switch>
           <Route path='/' exact>
-            <Redirect to='/collections'/>
+            <Redirect to='/collections/aMeasureOfTime'/>
+          </Route>
+          <Route path='/collections' exact>
+            <Redirect to='/collections/aMeasureOfTime'/>
           </Route>
           <Route path='/collections' component={CollectionsPage} />
           <Route path='/framing' component={()=><h1>Framing</h1>}/>
