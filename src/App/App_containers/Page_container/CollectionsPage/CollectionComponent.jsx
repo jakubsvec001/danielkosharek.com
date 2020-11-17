@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import ZoomImg from "react-image-zoom";
-import { useLocation } from "react-router-dom";
 
 import CollectionImage from "./CollectionImage";
 import { measureOfTimeList, additionalList, landscapeList } from "../../utilities/imageCollections"
-// import generateImageCollection from "../../utilities/generateImageCollection";
 
-import heroImage from "./April.9.2011_1000px.jpg";
-
-const zoomImageDim = 300;
 
 const StyledArtistStatement = styled.div`
   display: flex;
@@ -52,30 +47,35 @@ const CollectionComponent = ({ collection }) => {
 
   useEffect(() => {
     let collectionList;
+    let heroImageSrc;
     if (collection === "aMeasureOfTime") {
       collectionList = measureOfTimeList;
+      heroImageSrc = import('../../../../assets/images/measureOfTime/measureOfTime_1000px/June.1.2015_1000px.jpg');
     } else if (collection === "landscapes") {
       collectionList = landscapeList;
+      heroImageSrc = import('../../../../assets/images/landscape/landscape_1000px/LaCienega_1000px.jpg');
     } else if (collection === "additional") {
       collectionList = additionalList;
+      heroImageSrc = import('../../../../assets/images/additional/additional_1000px/LesFleursOmises(TheMissingFlowers)_1000pxSquare.jpg');
     }
-
-    collectionList[Math.floor(Math.random() * collectionList.length)].src["1000"].then((source) => {
-      setHeroComponent(() => (
-        <StyledImageZoom>
-          <ZoomImg
-            width={zoomImageDim}
-            height={zoomImageDim}
-            zoomWidth={zoomImageDim}
-            img={source.default}
-            zoomPosition="original"
-            as="img"
-          />
-        </StyledImageZoom>
-      ));
-    });
-
-
+    heroImageSrc
+      .then((source) => {
+        const zoomImageDim = 300;
+        console.log(source)
+        setHeroComponent(()=>(
+          <StyledImageZoom>
+            <ZoomImg
+              width={zoomImageDim}
+              height={zoomImageDim}
+              zoomWidth={zoomImageDim}
+              img={source.default}
+              zoomPosition="original"
+              as="img"
+            />
+          </StyledImageZoom>
+        ));
+      })
+      .catch((e) => console.error(e))
     collectionList.forEach(((image) => {
       image.src['1000'].then((source) => {
         setImageList((prevState) => [...prevState, <CollectionImage src={source.default} key={image.name} />]);
@@ -86,7 +86,7 @@ const CollectionComponent = ({ collection }) => {
   return (
     <>
       <StyledArtistStatement>
-        {/* {heroComponent} */}
+        {heroComponent}
         <StyledText>
           <h2>a measure of time</h2>
           <div>
