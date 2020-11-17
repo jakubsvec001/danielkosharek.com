@@ -95,7 +95,7 @@ const CollectionComponent = ({ collection }) => {
         {heroComponent}
         <StyledText>
           <h2>{artistStatement.title}</h2>
-          <div>{artistStatement.statement}</div>
+          <h3>{artistStatement.statement}</h3>
         </StyledText>
       </StyledArtistStatement>
       <hr />

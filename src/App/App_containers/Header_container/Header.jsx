@@ -25,7 +25,7 @@ const StyledNav = styled.nav`
   margin-right: ${({ theme }) => theme.paddingLarge}; 
 `;
 
-const StyledTitle = styled.h1`
+const StyledTitle = styled.h2`
   white-space: nowrap;
   margin-right: ${({ theme }) => theme.paddingSmall};
 `;

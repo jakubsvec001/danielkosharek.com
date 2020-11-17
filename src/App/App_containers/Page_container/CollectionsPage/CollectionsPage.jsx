@@ -29,7 +29,7 @@ const StyledNavLink = styled(NavLink)`
   }
 `;
 
-const StyledPageTitle = styled.h2`
+const StyledPageTitle = styled.h1`
   align-self: baseline;
   /* border: 1px solid #ff00ff; */
   padding-right: ${({ theme }) => theme.paddingLarge};
