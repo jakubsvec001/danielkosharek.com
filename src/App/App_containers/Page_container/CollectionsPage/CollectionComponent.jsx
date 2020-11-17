@@ -3,8 +3,8 @@ import styled from "styled-components";
 import ZoomImg from "react-image-zoom";
 
 import CollectionImage from "./CollectionImage";
-import { measureOfTimeList, additionalList, landscapeList } from "../../utilities/imageCollections"
-
+import { measureOfTimeList, additionalList, landscapeList } from "../../utilities/imageCollections";
+import artistStatements from "../../../../assets/textContent/artistStatements";
 
 const StyledArtistStatement = styled.div`
   display: flex;
@@ -44,20 +44,26 @@ const StyledCollection = styled.div`
 const CollectionComponent = ({ collection }) => {
   const [imageList, setImageList] = useState([]);
   const [heroComponent, setHeroComponent] = useState([]);
+  const [artistStatement, setArtistStatement] = useState([]);
 
   useEffect(() => {
     let collectionList;
     let heroImageSrc;
+    let artistStatement;
     if (collection === "aMeasureOfTime") {
       collectionList = measureOfTimeList;
       heroImageSrc = import('../../../../assets/images/measureOfTime/measureOfTime_1000px/June.1.2015_1000px.jpg');
+      setArtistStatement(artistStatements['aMeasureOfTime']);
     } else if (collection === "landscapes") {
       collectionList = landscapeList;
       heroImageSrc = import('../../../../assets/images/landscape/landscape_1000px/LaCienega_1000px.jpg');
+      setArtistStatement(artistStatements['landscape']);
     } else if (collection === "additional") {
       collectionList = additionalList;
       heroImageSrc = import('../../../../assets/images/additional/additional_1000px/LesFleursOmises(TheMissingFlowers)_1000pxSquare.jpg');
+      setArtistStatement(artistStatements['additional'])
     }
+
     heroImageSrc
       .then((source) => {
         const zoomImageDim = 300;
@@ -88,14 +94,8 @@ const CollectionComponent = ({ collection }) => {
       <StyledArtistStatement>
         {heroComponent}
         <StyledText>
-          <h2>a measure of time</h2>
-          <div>
-            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. duis aute irure dolor in
-            reprehenderit in voluptate velit,
-          </div>
+          <h2>{artistStatement.title}</h2>
+          <div>{artistStatement.statement}</div>
         </StyledText>
       </StyledArtistStatement>
       <hr />
