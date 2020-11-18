@@ -4,6 +4,8 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 
 const CollectionsPage = lazy(() => import('./CollectionsPage/CollectionsPage'));
 const PageNotFoundPage = lazy(() => import('./PageNotFoundPage/PageNotFoundPage'));
+const FramingPage = lazy(() => import('./FramingPage/FramingPage.jsx'));
+const AboutPage = lazy(() => import('./AboutPage/AboutPage'));
 
 const StyledPage = styled.main`
   /* border: 1px solid magenta; */
@@ -29,8 +31,8 @@ const Page = () => {
             <Redirect to='/collections/aMeasureOfTime'/>
           </Route>
           <Route path='/collections' component={CollectionsPage} />
-          <Route path='/framing' component={()=><h1>Framing</h1>}/>
-          <Route path='/about' component={()=><h1>About</h1>}/>
+          <Route path='/framing' component={FramingPage} />
+          <Route path='/about' component={AboutPage} />
           <Route path='*' component={PageNotFoundPage} />
         </Switch>
       </Suspense>
