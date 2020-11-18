@@ -52,6 +52,7 @@ const FramingPage = () => {
       {heroImageComponent}
       <hr />
       <StyledText>Framed in steel, or in the nude</StyledText>
+      {zoomComponent}
     </StyledPage>
   );
 };

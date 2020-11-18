@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const isDevelopment = process.env.NODE_ENV === 'development';
 const ENTRY = path.resolve(__dirname, 'src', 'Src__index.jsx');
@@ -15,6 +16,18 @@ module.exports = {
       : 'index.[contenthash].bundle.js',
     path: OUT,
     publicPath: '/',
+  },
+  optimization: {
+    runtimeChunk: 'single',
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test:  /[\\/]node_modules[\\/]/,
+          name: 'vendor',
+          chunks: 'all',
+        },
+      },
+    },
   },
   module: {
     rules: [
@@ -48,7 +61,8 @@ module.exports = {
       inject: 'body',
       appMountId: 'root',
       favicon: FAVICON,
-    })
+    }),
+    new CleanWebpackPlugin(),
   ],
   resolve: {
     extensions: ['.js', '.jsx'],
