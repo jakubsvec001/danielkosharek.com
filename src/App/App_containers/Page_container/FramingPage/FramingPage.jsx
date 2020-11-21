@@ -8,15 +8,12 @@ import {
   StyledNavLink,
   StyledPageTitle,
   StyledSelector,
-} from "../../styles/pageStyles";
-import { StyledText, StyledImageZoom } from "../../styles/framingStyles";
+} from "../pageStyles";
+import { StyledText, StyledImageZoom } from "./framingStyles";
 import ZoomImg from "react-image-zoom";
 
 const framingHeroSrc = import(
   "../../../../assets/images/framing/framing_1000px/gallery_angledLeft_1000px.jpg"
-);
-const zoomImgSrc = import(
-  "../../../../assets/images/framing/framing_1000px/frame_black_rusty_1000px.jpg"
 );
 
 export const StyledFrameHero = styled.img`
@@ -29,7 +26,6 @@ export const StyledFrameHero = styled.img`
 
 const FramingPage = () => {
   const [heroImageComponent, setHeroImageComponent] = useState();
-  const [zoomComponent, setZoomComponent] = useState();
 
   useEffect(() => {
     framingHeroSrc.then((source) =>
@@ -50,9 +46,8 @@ const FramingPage = () => {
       <hr />
 
       {heroImageComponent}
-      <hr />
-      <StyledText>Framed in steel, or in the nude</StyledText>
-      {zoomComponent}
+    <StyledText>Paintings are available in <em>nude</em>, or framed in <em>raw steel</em></StyledText>
+    <hr />
     </StyledPage>
   );
 };

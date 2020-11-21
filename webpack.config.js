@@ -1,31 +1,40 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
-const isDevelopment = process.env.NODE_ENV === 'development';
-const ENTRY = path.resolve(__dirname, 'src', 'Src__index.jsx');
-const OUT = path.resolve(__dirname, './public');
-const FAVICON = path.resolve(__dirname, 'src', 'assets', 'images', 'thumbnails', 'June.11.2011_100px.jpg')
+const mode = "development";
+// const mode = 'production'
+process.env.NODE_ENV = mode;
+const ENTRY = path.resolve(__dirname, "src", "Src__index.jsx");
+const OUT = path.resolve(__dirname, "./public");
+const FAVICON = path.resolve(
+  __dirname,
+  "src",
+  "assets",
+  "images",
+  "thumbnails",
+  "June.11.2011_100px.jpg"
+);
 
 module.exports = {
-  mode: 'development',
+  mode: process.env.NODE_ENV,
   entry: ENTRY,
   output: {
-    filename: isDevelopment
-      ? 'index.bundle.js'
-      : 'index.[contenthash].bundle.js',
+    filename: process.env.NODE_ENV === 'development'
+      ? "index.bundle.js"
+      : "index.[contenthash].bundle.js",
     path: OUT,
-    publicPath: '/',
+    publicPath: "/",
   },
   optimization: {
-    moduleIds: 'hashed',
-    runtimeChunk: 'single',
+    moduleIds: "hashed",
+    runtimeChunk: "single",
     splitChunks: {
       cacheGroups: {
         vendor: {
-          test:  /[\\/]node_modules[\\/]/,
-          name: 'vendor',
-          chunks: 'all',
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendor",
+          chunks: "all",
         },
       },
     },
@@ -35,7 +44,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
         },
         exclude: /node_modules/,
       },
@@ -43,11 +52,11 @@ module.exports = {
         test: /\.(png|jpeg|jpg|gif|svg)$/i,
         use: [
           {
-            loader: 'url-loader',
+            loader: "url-loader",
             options: {
               limit: 8192,
-              name: '[name].[hash:4].[ext]',
-              outputPath: 'images',
+              name: "[name].[hash:4].[ext]",
+              outputPath: "images",
             },
           },
         ],
@@ -56,17 +65,17 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'src/html_template/index.template.ejs',
-      filename: 'index.html',
-      title: 'DanielKosharek.com',
-      inject: 'body',
-      appMountId: 'root',
+      template: "src/html_template/index.template.ejs",
+      filename: "index.html",
+      title: "DanielKosharek.com",
+      inject: "body",
+      appMountId: "root",
       favicon: FAVICON,
     }),
     new CleanWebpackPlugin(),
   ],
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: [".js", ".jsx"],
   },
-  devtool: 'inline-source-map',
+  devtool: "inline-source-map",
 };

@@ -7,11 +7,16 @@ export const StyledText = styled.div`
   padding-right: ${({ theme }) => theme.paddingSmall};
   margin-bottom: ${({ theme }) => theme.paddingLarge};
   text-align: center;
-  border: 1px solid #ff00ff;
+  /* border: 1px solid #ff00ff; */
 `;
-
 
 export const StyledImageZoom = styled.div`
   margin: ${({ theme }) => theme.paddingSmall};
   cursor: crosshair;
-`;
+`
+
+export const StyledContainer = styled.div`
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+`;;

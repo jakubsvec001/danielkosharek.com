@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StyledImageContainer, StyledCollectionsImage, StyledImageCaption } from '../../styles/imageStyles';
+import { StyledImageContainer, StyledCollectionsImage, StyledImageCaption } from './imageStyles';
 
 const CollectionImage = ({ src, title }) => {
   return (

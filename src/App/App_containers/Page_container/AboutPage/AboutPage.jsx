@@ -8,25 +8,15 @@ import {
   StyledNavLink,
   StyledPageTitle,
   StyledSelector,
-} from "../../styles/pageStyles";
+} from  "../pageStyles";
 
-import { StyledText, StyledImageZoom } from "../../styles/framingStyles";
+import { StyledText, StyledFrameHero, StyledContainer } from "./AboutStyles";
 
 const aboutHeroSrc = import(
   "../../../../assets/images/additional/additional_1000px/SelfPortrait_1000px.jpg"
 );
 
-const zoomImgSrc = import(
-  "../../../../assets/images/framing/framing_1000px/frame_black_rusty_1000px.jpg"
-);
 
-export const StyledFrameHero = styled.img`
-  object-fit: cover;
-  min-width: 200px;
-  min-height: 200px;
-  /* width: 100%; */
-  flex: 1;
-`;
 
 const AboutPage = () => {
   const [heroImageComponent, setHeroImageComponent] = useState();
@@ -41,24 +31,24 @@ const AboutPage = () => {
         />
       )
     );
-    aboutHeroSrc.then((source) => {
-      return setZoomComponent(() => {
-        const zoomImageDim = 300;
-        console.log(source.default);
-        return (
-          <StyledImageZoom>
-            <ZoomImg
-              width={zoomImageDim}
-              height={zoomImageDim * 2}
-              zoomWidth={zoomImageDim}
-              img={source.default}
-              zoomPosition="original"
-              as="img"
-            />
-          </StyledImageZoom>
-        );
-      });
-    });
+    // aboutHeroSrc.then((source) => {
+    //   return setZoomComponent(() => {
+    //     const zoomImageDim = 300;
+    //     console.log(source.default);
+    //     return (
+    //       <StyledImageZoom>
+    //         <ZoomImg
+    //           width={zoomImageDim}
+    //           height={zoomImageDim * 2}
+    //           zoomWidth={zoomImageDim}
+    //           img={source.default}
+    //           zoomPosition="original"
+    //           as="img"
+    //         />
+    //       </StyledImageZoom>
+    //     );
+    //   });
+    // });
   }, []);
 
   return (
@@ -67,11 +57,12 @@ const AboutPage = () => {
         <StyledPageTitle>About</StyledPageTitle>
       </StyledPageHeader>
       <hr />
-
-      {heroImageComponent}
+      <StyledContainer>
+        {heroImageComponent}
+        <StyledText>Daniel Kosharek lives in Santa Fe, NM, where he enjoys baking bread and staring into the void of time.</StyledText>
+      </StyledContainer>
       <hr />
-      {zoomComponent}
-      <StyledText>Framed in steel, or in the nude</StyledText>
+      {/* {zoomComponent} */}
     </StyledPage>
   );
 };

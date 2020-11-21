@@ -4,7 +4,7 @@ import ZoomImg from "react-image-zoom";
 import CollectionImage from "./CollectionImage";
 import { measureOfTimeList, additionalList, landscapeList } from "../../utilities/imageCollections";
 import artistStatements from "../../../../assets/textContent/artistStatements";
-import { StyledArtistStatement, StyledImageZoom, StyledText, StyledCollection } from "../../styles/collectionStyles"
+import { StyledArtistStatement, StyledImageZoom, StyledText, StyledCollection } from "./collectionStyles"
 
 const CollectionComponent = ({ collection }) => {
   const [imageList, setImageList] = useState([]);
