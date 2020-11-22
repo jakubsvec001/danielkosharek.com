@@ -87,7 +87,7 @@ export const additionalList = [
 
 export const measureOfTimeList = [
   {
-    name: "April 9th 2011",
+    name: "April 9th, 2011",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/April.9.2011_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/April.9.2011_1000px.jpg"),
@@ -95,7 +95,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "April 30th 2011",
+    name: "April 30th, 2011",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/April.30.2011_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/April.30.2011_1000px.jpg"),
@@ -103,7 +103,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "May 6th 2011",
+    name: "May 6th, 2011",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/May.6.2011_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/May.6.2011_1000px.jpg"),
@@ -111,7 +111,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "May 11th 2011",
+    name: "May 11th, 2011",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/May.11.2011_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/May.11.2011_1000px.jpg"),
@@ -119,7 +119,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "May 21st 2011 (1)",
+    name: "May 21st, 2011 (1)",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/May.21.2011_1_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/May.21.2011_1_1000px.jpg"),
@@ -127,7 +127,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "May 21st 2011 (2)",
+    name: "May 21st, 2011 (2)",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/May.21.2011_2_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/May.21.2011_2_1000px.jpg"),
@@ -135,7 +135,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "May 26th 2011",
+    name: "May 26th, 2011",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/May.26.2011_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/May.26.2011_1000px.jpg"),
@@ -143,7 +143,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "June 11th 2011",
+    name: "June 11th, 2011",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/June.11.2011_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/June.11.2011_1000px.jpg"),
@@ -151,7 +151,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "June 26th 2011",
+    name: "June 26th, 2011",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/June.26.2011_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/June.26.2011_1000px.jpg"),
@@ -159,7 +159,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "July 9th 2011",
+    name: "July 9th, 2011",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/July.9.2011_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/July.9.2011_1000px.jpg"),
@@ -167,7 +167,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "October 3rd 2011",
+    name: "October 3rd, 2011",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/October.3.2011_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/October.3.2011_1000px.jpg"),
@@ -175,7 +175,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "March 3rd 2012",
+    name: "March 3rd, 2012",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/March.3.2012_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/March.3.2012_1000px.jpg"),
@@ -183,7 +183,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "April 21st 2013",
+    name: "April 21st, 2013",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/April.21.2013_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/April.21.2013_1000px.jpg"),
@@ -191,7 +191,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "June 16th 2014",
+    name: "June 16th, 2014",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/June.16.2014_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/June.16.2014_1000px.jpg"),
@@ -199,7 +199,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "June 1st 2015",
+    name: "June 1st, 2015",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/June.1.2015_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/June.1.2015_1000px.jpg"),
@@ -207,7 +207,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "May 15th 2016",
+    name: "May 15th, 2016",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/May.15.2016_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/May.15.2016_1000px.jpg"),
@@ -215,7 +215,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "November 6th 2016",
+    name: "November 6th, 2016",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/November.6.2016_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/November.6.2016_1000px.jpg"),
@@ -223,7 +223,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "December 17th 2016",
+    name: "December 17th, 2016",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/December.17.2016_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/December.17.2016_1000px.jpg"),
@@ -231,7 +231,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "June 14th 2017",
+    name: "June 14th, 2017",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/June.14.2017_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/June.14.2017_1000px.jpg"),
@@ -239,7 +239,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "June 24th 2017",
+    name: "June 24th, 2017",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/June.24.2017_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/June.24.2017_1000px.jpg"),
@@ -247,7 +247,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "July 17th 2017",
+    name: "July 17th, 2017",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/July.17.2017_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/July.17.2017_1000px.jpg"),
@@ -255,7 +255,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "July 23rd 2017",
+    name: "July 23rd, 2017",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/July.23.2017_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/July.23.2017_1000px.jpg"),
@@ -263,7 +263,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "May 22nd 2018 (1)",
+    name: "May 22nd, 2018 (1)",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/May.22.2018_1_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/May.22.2018_1_1000px.jpg"),
@@ -271,7 +271,7 @@ export const measureOfTimeList = [
     }
   },
   {
-    name: "May 22nd 2018 (2)",
+    name: "May 22nd, 2018 (2)",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/May.22.2018_2_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/May.22.2018_2_1000px.jpg"),
@@ -279,7 +279,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "June 4th 2019",
+    name: "June 4th, 2019",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/June.4.2019_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/June.4.2019_1000px.jpg"),
@@ -287,7 +287,7 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "June 25th 2019",
+    name: "June 25th, 2019",
     src: {
       300: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_300px/June.25.2019_300px.jpg"),
       1000: import(/* webpackMode: lazy-once */ "../../../assets/images/measureOfTime/measureOfTime_1000px/June.25.2019_1000px.jpg"),

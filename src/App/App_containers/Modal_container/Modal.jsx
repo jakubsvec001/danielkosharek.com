@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Modal_container = () => {
-  return (
-    <div> Modal</div>
-  )
-}
+import { StyledModalContainer } from './ModalStyle';
 
-export default Modal_container;
+const ModalContainer = () => (
+  <StyledModalContainer>
+    <div> Modal</div>
+  </StyledModalContainer>
+);
+
+export default ModalContainer;

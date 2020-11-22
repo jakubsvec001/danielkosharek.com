@@ -1,47 +1,12 @@
 import React, { useState, useEffect } from "react";
-import styled from "styled-components";
 import ZoomImg from "react-image-zoom";
 
 import CollectionImage from "./CollectionImage";
 import { measureOfTimeList, additionalList, landscapeList } from "../../utilities/imageCollections";
 import artistStatements from "../../../../assets/textContent/artistStatements";
+import { StyledArtistStatement, StyledImageZoom, StyledText, StyledCollection } from "./collectionStyles"
 
-const StyledArtistStatement = styled.div`
-  display: flex;
-  flex-flow: column-reverse nowrap;
-  align-items: center;
-  justify-content: center;
-  @media screen and (min-width: 700px) {
-    flex-flow: row nowrap;
-    align-content: center;
-    justify-content: center;
-  }
-`;
-
-const StyledImageZoom = styled.div`
-  margin: ${({ theme }) => theme.paddingSmall};
-  display: none;
-  cursor: crosshair;
-  @media screen and (min-width: 700px) {
-    display: inline-block;
-  }
-`;
-
-const StyledText = styled.div`
-  display: inline;
-  max-width: 450px;
-  padding-left: ${({ theme }) => theme.paddingSmall};
-  padding-right: ${({ theme }) => theme.paddingSmall};
-  margin-bottom: ${({ theme }) => theme.paddingLarge};
-  text-align: justify;
-`;
-
-const StyledCollection = styled.div`
-  display: flex;
-  flex-flow: row wrap;
-`;
-
-const CollectionComponent = ({ collection }) => {
+const CollectionComponent = ({ collection, actions, data }) => {
   const [imageList, setImageList] = useState([]);
   const [heroComponent, setHeroComponent] = useState([]);
   const [artistStatement, setArtistStatement] = useState([]);
@@ -67,7 +32,6 @@ const CollectionComponent = ({ collection }) => {
     heroImageSrc
       .then((source) => {
         const zoomImageDim = 300;
-        console.log(source)
         setHeroComponent(()=>(
           <StyledImageZoom>
             <ZoomImg
@@ -84,7 +48,7 @@ const CollectionComponent = ({ collection }) => {
       .catch((e) => console.error(e))
     collectionList.forEach(((image) => {
       image.src['1000'].then((source) => {
-        setImageList((prevState) => [...prevState, <CollectionImage src={source.default} title={image.name} key={image.name} />]);
+        setImageList((prevState) => [...prevState, <CollectionImage src={source.default} title={image.name} key={image.name} data={data} actions={actions} />]);
       });
     }));
   }, []);
