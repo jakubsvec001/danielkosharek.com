@@ -1,11 +1,14 @@
-import React from 'react';
 import styled from 'styled-components';
 
-export const StyledModalContainer = styled.div`
+const StyledModalContainer = styled.div`
   position: absolute;
-  x: 0;
-  y: 0;
-  width: 50%;
-  height: 50%;
-  background-color: #FF00FF;
-`
+  left: 0px;
+  top: 0px;
+  z-index: 100000;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 30%;
+`;
+
+export { StyledModalContainer }

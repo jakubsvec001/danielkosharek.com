@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { Helmet } from 'react-helmet';
 import { BrowserRouter } from 'react-router-dom';
@@ -23,6 +23,8 @@ const StyledApp = styled.div`
   align-items: stretch;
 `
 
+
+
 const App = () => {
   const [isModal, setIsModal] = useState(false);
   const showModal = () => {
@@ -30,7 +32,7 @@ const App = () => {
   const hideModal = () => {
   };
   const handleModalToggle = (e) => {
-    console.log('event: ', e)
+    setIsModal(!isModal);
   };
 
   const actions = {
@@ -49,8 +51,8 @@ const App = () => {
       </Helmet>
       <ThemeProvider theme={ theme } >
         <GlobalStyle />
+        {isModal && <Modal actions={actions} />}
         <StyledApp>
-          {isModal && <Modal />}
           <Header />
           <PageContainer actions={actions} data={data} />
           <Footer />
