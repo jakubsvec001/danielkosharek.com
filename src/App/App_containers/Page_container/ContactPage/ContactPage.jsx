@@ -1,7 +1,4 @@
 import React, { useState, useEffect } from "react";
-import styled from "styled-components";
-import ZoomImg from 'react-image-zoom';
-
 import {
   StyledPage,
   StyledPageHeader,
@@ -9,8 +6,7 @@ import {
   StyledPageTitle,
   StyledSelector,
 } from  "../pageStyles";
-
-import { StyledText, StyledFrameHero, StyledContainer } from "./AboutStyles";
+import { StyledText, StyledFrameHero, StyledContainer, StyledTextContainer } from "./ContactStyles";
 
 const aboutHeroSrc = import(
   "../../../../assets/images/additional/additional_1000px/SelfPortrait_1000px.jpg"
@@ -18,7 +14,7 @@ const aboutHeroSrc = import(
 
 
 
-const AboutPage = () => {
+const ContactPage = () => {
   const [heroImageComponent, setHeroImageComponent] = useState();
   const [zoomComponent, setZoomComponent] = useState();
 
@@ -31,24 +27,6 @@ const AboutPage = () => {
         />
       )
     );
-    // aboutHeroSrc.then((source) => {
-    //   return setZoomComponent(() => {
-    //     const zoomImageDim = 300;
-    //     console.log(source.default);
-    //     return (
-    //       <StyledImageZoom>
-    //         <ZoomImg
-    //           width={zoomImageDim}
-    //           height={zoomImageDim * 2}
-    //           zoomWidth={zoomImageDim}
-    //           img={source.default}
-    //           zoomPosition="original"
-    //           as="img"
-    //         />
-    //       </StyledImageZoom>
-    //     );
-    //   });
-    // });
   }, []);
 
   return (
@@ -59,12 +37,14 @@ const AboutPage = () => {
       <hr />
       <StyledContainer>
         {heroImageComponent}
-        <StyledText>Daniel Kosharek lives in Santa Fe, NM, where he enjoys baking bread and staring into the void of time.</StyledText>
+        <StyledTextContainer>
+          <StyledText><strong>Daniel Kosharek lives in Santa Fe, NM, where he enjoys baking bread and painting.</strong></StyledText>
+          <StyledText>For information about sales, contact daniel at: <em>danielkosharek(at)gmail(dot)com</em></StyledText>
+        </StyledTextContainer>
       </StyledContainer>
       <hr />
-      {/* {zoomComponent} */}
     </StyledPage>
   );
 };
 
-export default AboutPage;
+export default ContactPage;

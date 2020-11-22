@@ -21,8 +21,8 @@ module.exports = {
   entry: ENTRY,
   output: {
     filename: process.env.NODE_ENV === 'development'
-      ? "index.bundle.js"
-      : "index.[contenthash].bundle.js",
+      ? "index.[contenthash].bundle.js"
+      : "index.bundle.js",
     path: OUT,
     publicPath: "/",
   },

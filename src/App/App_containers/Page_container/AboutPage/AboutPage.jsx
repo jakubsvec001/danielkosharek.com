@@ -31,24 +31,6 @@ const AboutPage = () => {
         />
       )
     );
-    // aboutHeroSrc.then((source) => {
-    //   return setZoomComponent(() => {
-    //     const zoomImageDim = 300;
-    //     console.log(source.default);
-    //     return (
-    //       <StyledImageZoom>
-    //         <ZoomImg
-    //           width={zoomImageDim}
-    //           height={zoomImageDim * 2}
-    //           zoomWidth={zoomImageDim}
-    //           img={source.default}
-    //           zoomPosition="original"
-    //           as="img"
-    //         />
-    //       </StyledImageZoom>
-    //     );
-    //   });
-    // });
   }, []);
 
   return (

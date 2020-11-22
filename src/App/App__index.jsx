@@ -29,6 +29,18 @@ const App = () => {
   };
   const hideModal = () => {
   };
+  const handleModalToggle = (e) => {
+    console.log('event: ', e)
+  };
+
+  const actions = {
+    handleModalToggle,
+    setIsModal,
+  }
+
+  const data = {
+    isModal,
+  }
 
   return (
     <BrowserRouter>
@@ -40,7 +52,7 @@ const App = () => {
         <StyledApp>
           {isModal && <Modal />}
           <Header />
-          <PageContainer />
+          <PageContainer actions={actions} data={data} />
           <Footer />
         </StyledApp>
       </ThemeProvider>

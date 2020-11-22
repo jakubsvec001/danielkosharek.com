@@ -6,6 +6,7 @@ const CollectionsPage = lazy(() => import('./CollectionsPage/CollectionsPage'));
 const PageNotFoundPage = lazy(() => import('./PageNotFoundPage/PageNotFoundPage'));
 const FramingPage = lazy(() => import('./FramingPage/FramingPage.jsx'));
 const AboutPage = lazy(() => import('./AboutPage/AboutPage'));
+const ContactPage = lazy(() => import('./ContactPage/ContactPage'));
 
 const StyledPage = styled.main`
   /* border: 1px solid magenta; */
@@ -18,7 +19,7 @@ const StyledPage = styled.main`
   /* border: 1px solid #ff00ff; */
 `;
 
-const Page = () => {
+const Page = ({ data, actions }) => {
   
   return (
     <StyledPage>
@@ -30,9 +31,10 @@ const Page = () => {
           <Route path='/collections' exact>
             <Redirect to='/collections/aMeasureOfTime'/>
           </Route>
-          <Route path='/collections' component={CollectionsPage} />
+          <Route path='/collections' component={() => <CollectionsPage data={data} actions={actions} />} />
           <Route path='/framing' component={FramingPage} />
           <Route path='/about' component={AboutPage} />
+          <Route path='/contact' component={ContactPage} />
           <Route path='*' component={PageNotFoundPage} />
         </Switch>
       </Suspense>

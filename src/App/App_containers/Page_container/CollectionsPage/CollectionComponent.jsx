@@ -6,7 +6,7 @@ import { measureOfTimeList, additionalList, landscapeList } from "../../utilitie
 import artistStatements from "../../../../assets/textContent/artistStatements";
 import { StyledArtistStatement, StyledImageZoom, StyledText, StyledCollection } from "./collectionStyles"
 
-const CollectionComponent = ({ collection }) => {
+const CollectionComponent = ({ collection, actions, data }) => {
   const [imageList, setImageList] = useState([]);
   const [heroComponent, setHeroComponent] = useState([]);
   const [artistStatement, setArtistStatement] = useState([]);
@@ -48,7 +48,7 @@ const CollectionComponent = ({ collection }) => {
       .catch((e) => console.error(e))
     collectionList.forEach(((image) => {
       image.src['1000'].then((source) => {
-        setImageList((prevState) => [...prevState, <CollectionImage src={source.default} title={image.name} key={image.name} />]);
+        setImageList((prevState) => [...prevState, <CollectionImage src={source.default} title={image.name} key={image.name} data={data} actions={actions} />]);
       });
     }));
   }, []);

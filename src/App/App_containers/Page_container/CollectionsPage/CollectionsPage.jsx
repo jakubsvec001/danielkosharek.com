@@ -15,7 +15,7 @@ const CollectionSelector = () => {
   );
 };
 
-const CollectionsPage = () => {
+const CollectionsPage = ({ actions, data }) => {
   return (
     <StyledPage>
       <StyledPageHeader>
@@ -24,9 +24,9 @@ const CollectionsPage = () => {
       </StyledPageHeader>
       <hr />
       <Switch>
-        <Route path="/collections/aMeasureOfTime" component={() => <CollectionComponent collection='aMeasureOfTime' />} />
-        <Route path="/collections/landscapes" component={() => <CollectionComponent collection='landscapes' />} />
-        <Route path="/collections/additional" component={() => <CollectionComponent collection='additional' />} />
+        <Route path="/collections/aMeasureOfTime" component={() => <CollectionComponent collection='aMeasureOfTime' actions={actions} data={data} />} />
+        <Route path="/collections/landscapes" component={() => <CollectionComponent collection='landscapes' actions={actions} data={data} />} />
+        <Route path="/collections/additional" component={() => <CollectionComponent collection='additional' actions={actions} data={data} />} />
       </Switch>
     </StyledPage>
   );
