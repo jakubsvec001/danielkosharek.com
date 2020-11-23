@@ -2,7 +2,7 @@ import React from 'react';
 import { StyledImageContainer, StyledCollectionsImage, StyledImageCaption } from './imageStyles';
 
 const CollectionImage = ({ src, title, actions }) => {
-  actions.handleModalToggle = () => {};
+  actions.handleModalToggle = () => {}; // delete to implement modal controls onClick
 
   return (
     <StyledImageContainer>

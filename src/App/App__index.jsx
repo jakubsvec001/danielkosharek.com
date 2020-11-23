@@ -8,7 +8,7 @@ import { globalStyleTheme } from '../globalStyles/globalStyleTheme';
 
 import Header from './App_containers/Header_container/Header';
 import Footer from './App_containers/Footer_container/Footer';
-import PageContainer from './App_containers/Page_container/Page_container';
+import PageContainer from './App_containers/Page_container/PageContainer';
 import Modal from './App_containers/Modal_container/Modal';
 
 const StyledApp = styled.div`
