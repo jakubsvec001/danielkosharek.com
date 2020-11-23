@@ -2,9 +2,18 @@ import React, { useState, useEffect } from "react";
 import ZoomImg from "react-image-zoom";
 
 import CollectionImage from "./CollectionImage";
-import { measureOfTimeList, additionalList, landscapeList } from "../../utilities/imageCollections";
+import {
+  measureOfTimeList,
+  additionalList,
+  landscapeList,
+} from "../../utilities/imageCollections";
 import artistStatements from "../../../../assets/textContent/artistStatements";
-import { StyledArtistStatement, StyledImageZoom, StyledText, StyledCollection } from "./collectionStyles"
+import {
+  StyledArtistStatement,
+  StyledImageZoom,
+  StyledText,
+  StyledCollection,
+} from "./collectionStyles";
 
 const CollectionComponent = ({ collection, actions, data }) => {
   const [imageList, setImageList] = useState([]);
@@ -17,22 +26,28 @@ const CollectionComponent = ({ collection, actions, data }) => {
     let artistStatement;
     if (collection === "aMeasureOfTime") {
       collectionList = measureOfTimeList;
-      heroImageSrc = import('../../../../assets/images/measureOfTime/measureOfTime_1000px/June.1.2015_1000px.jpg');
-      setArtistStatement(artistStatements['aMeasureOfTime']);
+      heroImageSrc = import(
+        "../../../../assets/images/measureOfTime/measureOfTime_1000px/June.1.2015_1000px.jpg"
+      );
+      setArtistStatement(artistStatements["aMeasureOfTime"]);
     } else if (collection === "landscapes") {
       collectionList = landscapeList;
-      heroImageSrc = import('../../../../assets/images/landscape/landscape_1000px/LaCienega_1000px.jpg');
-      setArtistStatement(artistStatements['landscape']);
+      heroImageSrc = import(
+        "../../../../assets/images/landscape/landscape_1000px/LaCienega_1000px.jpg"
+      );
+      setArtistStatement(artistStatements["landscape"]);
     } else if (collection === "additional") {
       collectionList = additionalList;
-      heroImageSrc = import('../../../../assets/images/additional/additional_1000px/LesFleursOmises(TheMissingFlowers)_1000pxSquare.jpg');
-      setArtistStatement(artistStatements['additional'])
+      heroImageSrc = import(
+        "../../../../assets/images/additional/additional_1000px/LesFleursOmises(TheMissingFlowers)_1000pxSquare.jpg"
+      );
+      setArtistStatement(artistStatements["additional"]);
     }
 
     heroImageSrc
       .then((source) => {
         const zoomImageDim = 300;
-        setHeroComponent(()=>(
+        setHeroComponent(() => (
           <StyledImageZoom>
             <ZoomImg
               width={zoomImageDim}
@@ -45,12 +60,21 @@ const CollectionComponent = ({ collection, actions, data }) => {
           </StyledImageZoom>
         ));
       })
-      .catch((e) => console.error(e))
-    collectionList.forEach(((image) => {
-      image.src['1000'].then((source) => {
-        setImageList((prevState) => [...prevState, <CollectionImage src={source.default} title={image.name} key={image.name} data={data} actions={actions} />]);
+      .catch((e) => console.error(e));
+    collectionList.forEach((image) => {
+      image.src["1000"].then((source) => {
+        setImageList((prevState) => [
+          ...prevState,
+          <CollectionImage
+            src={source.default}
+            title={image.name}
+            key={image.name}
+            data={data}
+            actions={actions}
+          />,
+        ]);
       });
-    }));
+    });
   }, []);
 
   return (
@@ -63,9 +87,7 @@ const CollectionComponent = ({ collection, actions, data }) => {
         </StyledText>
       </StyledArtistStatement>
       <hr />
-      <StyledCollection>
-        {imageList}
-      </StyledCollection>
+      <StyledCollection>{imageList}</StyledCollection>
     </>
   );
 };

@@ -1,4 +1,4 @@
-export const theme = {
+export const globalStyleTheme = {
   primary: '#978c89',
   secondary: '#f4f4f4',
   canvas: 'white',

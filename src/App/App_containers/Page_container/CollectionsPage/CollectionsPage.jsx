@@ -16,6 +16,7 @@ const CollectionSelector = () => {
 };
 
 const CollectionsPage = ({ actions, data }) => {
+  // add state and use useMemo()
   return (
     <StyledPage>
       <StyledPageHeader>
