@@ -2,24 +2,21 @@ import React, { useState, useEffect } from "react";
 import {
   StyledPage,
   StyledPageHeader,
-  StyledNavLink,
   StyledPageTitle,
-  StyledSelector,
-} from  "../pageStyles";
-import { StyledText, StyledFrameHero, StyledContainer, StyledTextContainer } from "./ContactStyles";
+} from  "../PageStyles";
 
-const aboutHeroSrc = import(
-  "../../../../assets/images/additional/additional_1000px/SelfPortrait_1000px.jpg"
+import { StyledText, StyledTextBackground, StyledFrameHero, StyledContainer, StyledTextContainer } from "./ContactStyles";
+
+const contactHeroSrc = import(
+  "../../../../assets/images/additional/additional_1000px/selfportrait_1000px.jpg"
 );
-
-
 
 const ContactPage = () => {
   const [heroImageComponent, setHeroImageComponent] = useState();
   const [zoomComponent, setZoomComponent] = useState();
 
   useEffect(() => {
-    aboutHeroSrc.then((source) =>
+    contactHeroSrc.then((source) =>
       setHeroImageComponent(
         <StyledFrameHero
           src={source.default}
@@ -32,14 +29,18 @@ const ContactPage = () => {
   return (
     <StyledPage>
       <StyledPageHeader>
-        <StyledPageTitle>About</StyledPageTitle>
+        <StyledPageTitle>CONTACT</StyledPageTitle>
       </StyledPageHeader>
       <hr />
       <StyledContainer>
         {heroImageComponent}
         <StyledTextContainer>
-          <StyledText><strong>Daniel Kosharek lives in Santa Fe, NM, where he enjoys baking bread and painting.</strong></StyledText>
-          <StyledText>For information about sales, contact daniel at: <em>danielkosharek(at)gmail(dot)com</em></StyledText>
+          <h2>Daniel Kosharek</h2>
+          <StyledText>lives in Santa Fe, NM, where he enjoys baking bread and painting.</StyledText>
+          <hr />
+          <StyledText>For information about sales, contact Daniel at: </StyledText>
+          <br />
+          <StyledTextBackground><em>danielkosharek (at) gmail (dot) com</em></StyledTextBackground>
         </StyledTextContainer>
       </StyledContainer>
       <hr />

@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export const StyledPage = styled.div`
   margin: ${({ theme }) => theme.paddingLarge};
+  min-width: 450px;
 `;
 
 export const StyledPageHeader = styled.div`

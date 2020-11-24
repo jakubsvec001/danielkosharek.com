@@ -8,8 +8,8 @@ import {
   StyledNavLink,
   StyledPageTitle,
   StyledSelector,
-} from "../pageStyles";
-import { StyledText, StyledImageZoom } from "./framingStyles";
+} from "../PageStyles";
+import { StyledText, StyledBackgroundSpan } from "./framingStyles";
 import ZoomImg from "react-image-zoom";
 
 const framingHeroSrc = import(
@@ -41,12 +41,12 @@ const FramingPage = () => {
   return (
     <StyledPage>
       <StyledPageHeader>
-        <StyledPageTitle>Framing</StyledPageTitle>
+        <StyledPageTitle>FRAMING</StyledPageTitle>
       </StyledPageHeader>
       <hr />
 
       {heroImageComponent}
-    <StyledText>Paintings are available in <em>nude</em>, or framed in <em>raw steel</em></StyledText>
+    <StyledText><StyledBackgroundSpan>Paintings are available in NUDE, or framed in STEEL</StyledBackgroundSpan></StyledText>
     <hr />
     </StyledPage>
   );

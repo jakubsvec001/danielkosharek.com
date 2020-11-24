@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import CollectionComponent from './CollectionComponent';
-import { StyledPage, StyledPageHeader, StyledNavLink, StyledPageTitle, StyledSelector, } from '../pageStyles';
+import { StyledPage, StyledPageHeader, StyledNavLink, StyledPageTitle, StyledSelector, } from '../PageStyles';
 
 
 const CollectionSelector = () => {
@@ -20,7 +20,7 @@ const CollectionsPage = ({ actions, data }) => {
   return (
     <StyledPage>
       <StyledPageHeader>
-        <StyledPageTitle>Collections</StyledPageTitle>
+        <StyledPageTitle>COLLECTIONS</StyledPageTitle>
         <CollectionSelector />
       </StyledPageHeader>
       <hr />

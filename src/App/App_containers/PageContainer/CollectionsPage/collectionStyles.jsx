@@ -34,3 +34,11 @@ export const StyledCollection = styled.div`
   display: flex;
   flex-flow: row wrap;
 `;
+
+export const StyledBackgroundSpan = styled.span`
+  background-color: ${({ theme }) => theme.primary};
+  padding-left: 2em;
+  padding-top: ${({ theme }) => theme.paddingSmall};
+  padding-bottom: ${({ theme }) => theme.paddingSmall};
+  padding-right: 2em;
+`;
