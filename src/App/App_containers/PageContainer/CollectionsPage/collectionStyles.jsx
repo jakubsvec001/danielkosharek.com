@@ -27,7 +27,10 @@ export const StyledText = styled.div`
   padding-left: ${({ theme }) => theme.paddingSmall};
   padding-right: ${({ theme }) => theme.paddingSmall};
   margin-bottom: ${({ theme }) => theme.paddingLarge};
-  text-align: justify;
+  text-align: center;
+  @media screen and (min-width: 700px) {
+    text-align: justify;
+  }
 `;
 
 export const StyledCollection = styled.div`

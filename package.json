@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-dev": "node ./server/index__server.js",
+    "build-prod": "webpack -p",
     "build-dev": "webpack -w"
   },
   "repository": {
@@ -36,6 +37,7 @@
     "eslint-plugin-react-hooks": "^2.5.1",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "url-loader": "^4.1.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"

@@ -13,7 +13,7 @@ import {
   StyledImageZoom,
   StyledText,
   StyledCollection,
-} from "./collectionStyles";
+} from "./CollectionStyles";
 
 const CollectionComponent = ({ collection, actions, data }) => {
   const [imageList, setImageList] = useState([]);

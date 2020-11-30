@@ -33,7 +33,7 @@ export const StyledText = styled.p`
 `;
 
 export const StyledBackgroundSpan = styled.span`
-  background-color: ${({ theme }) => theme.secondary};
+  /* background-color: ${({ theme }) => theme.secondary}; */
   padding-left: 2em;
   padding-top: ${({ theme }) => theme.paddingSmall};
   padding-bottom: ${({ theme }) => theme.paddingSmall};

@@ -1,10 +1,9 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
-const mode = "development";
-// const mode = 'production'
-process.env.NODE_ENV = mode;
+
 const ENTRY = path.resolve(__dirname, "src", "Src__index.jsx");
 const OUT = path.resolve(__dirname, "./public");
 const FAVICON = path.resolve(
@@ -20,9 +19,7 @@ module.exports = {
   mode: process.env.NODE_ENV,
   entry: ENTRY,
   output: {
-    filename: process.env.NODE_ENV === 'development'
-      ? "index.[contenthash].bundle.js"
-      : "index.[contenthash].bundle.js",
+    filename: "index.[contenthash].bundle.js",
     path: OUT,
     publicPath: "/",
   },
@@ -38,6 +35,7 @@ module.exports = {
         },
       },
     },
+    minimizer: process.env.NODE_ENV === 'production' ? [new UglifyJsPlugin()] : [],
   },
   module: {
     rules: [
@@ -77,5 +75,5 @@ module.exports = {
   resolve: {
     extensions: [".js", ".jsx"],
   },
-  devtool: "inline-source-map",
+  devtool: process.env.NODE_ENV === 'development' ? "inline-source-map" : "source-map",
 };
