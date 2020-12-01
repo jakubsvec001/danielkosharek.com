@@ -6,6 +6,6 @@
 # src/assets/*
 # *.jpg
 public/*index*
-/src/assets/images/measureOfTime
+/src/assets/images/measureOfTime/measureOfTime_2000px
 /public/images/*
 .DS_Store
