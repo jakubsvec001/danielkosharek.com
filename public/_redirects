@@ -1,1 +1,1 @@
-process.env.NODE_ENV === 'production' ? [new UglifyJsPlugin()] : [],
+/*    /index.html   200
