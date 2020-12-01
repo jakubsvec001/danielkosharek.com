@@ -3,6 +3,9 @@
 *.js.map
 *.bundle.js
 /package-lock.json
-src/assets/*
-*.jpg
+# src/assets/*
+# *.jpg
 public/*index*
+/src/assets/images/measureOfTime
+/public/images/*
+.DS_Store
