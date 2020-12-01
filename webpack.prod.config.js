@@ -70,7 +70,6 @@ module.exports = {
       appMountId: "root",
       favicon: FAVICON,
     }),
-    // new CleanWebpackPlugin(),
   ],
   resolve: {
     extensions: [".js", ".jsx"],
