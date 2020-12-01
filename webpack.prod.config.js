@@ -5,7 +5,7 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 
 const ENTRY = path.resolve(__dirname, "src", "Src__index.jsx");
-const OUT = path.resolve(__dirname, "./public/index");
+const OUT = path.resolve(__dirname, "./public");
 const FAVICON = path.resolve(
   __dirname,
   "src",
