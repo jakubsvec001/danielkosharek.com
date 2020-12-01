@@ -5,7 +5,7 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 
 const ENTRY = path.resolve(__dirname, "src", "Src__index.jsx");
-const OUT = path.resolve(__dirname, "./public");
+const OUT = path.resolve(__dirname, "./public/index");
 const FAVICON = path.resolve(
   __dirname,
   "src",
@@ -70,7 +70,7 @@ module.exports = {
       appMountId: "root",
       favicon: FAVICON,
     }),
-    new CleanWebpackPlugin(),
+    // new CleanWebpackPlugin(),
   ],
   resolve: {
     extensions: [".js", ".jsx"],

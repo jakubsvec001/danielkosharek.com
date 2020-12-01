@@ -5,4 +5,4 @@
 /package-lock.json
 src/assets/*
 *.jpg
-public/*
+public/*index*
