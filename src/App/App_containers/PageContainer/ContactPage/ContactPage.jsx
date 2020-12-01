@@ -8,7 +8,7 @@ import {
 import { StyledText, StyledTextBackground, StyledFrameHero, StyledContainer, StyledTextContainer } from "./ContactStyles";
 
 const contactHeroSrc = import(
-  "../../../../assets/images/additional/additional_1000px/selfportrait_1000px.jpg"
+  "../../../../assets/images/additional/additional_1000px/SelfPortrait_1000px.jpg"
 );
 
 const ContactPage = () => {
