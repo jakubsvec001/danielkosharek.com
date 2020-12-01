@@ -8,7 +8,7 @@ import {
   landscapeList,
 } from "../../utilities/imageCollections";
 import artistStatements from "../../../../assets/textContent/artistStatements";
-import { StyledArtistStatement, StyledImageZoom, StyledText, StyledCollection, } from "./CollectionStyles";
+import { StyledArtistStatement, StyledImageZoom, StyledText, StyledCollection, } from "./CollectionsStyles";
 
 const CollectionComponent = ({ collection, actions, data }) => {
   const [imageList, setImageList] = useState([]);
