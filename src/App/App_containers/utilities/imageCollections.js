@@ -1,5 +1,3 @@
-import { lazy } from 'react';
-
 export const landscapeList = [
   {
     name: "Crows In The Orchard",
