@@ -57,7 +57,7 @@ const CollectionComponent = ({ collection, actions, data }) => {
       })
       .catch((e) => console.error(e));
     collectionList.forEach((image) => {
-      image.src["1000"].then((source) => {
+      image.src["300"].then((source) => {
         setImageList((prevState) => [
           ...prevState,
           <CollectionImage

@@ -5,6 +5,7 @@ flex: 1;
 display: flex;
 flex-basis: 100px;
 cursor: pointer;
+max-width: 300px;
 flex-flow: column wrap;
 margin: 2%;
 height: 100%;
