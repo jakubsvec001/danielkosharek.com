@@ -19,26 +19,25 @@ const CollectionComponent = ({ collection, actions, data }) => {
     let collectionList;
     let heroImageSrc;
     let artistStatement;
-    if (collection === "aMeasureOfTime") {
+    if (data.collection === "aMeasureOfTime") {
       collectionList = measureOfTimeList;
       heroImageSrc = import(
         "../../../../assets/images/measureOfTime/measureOfTime_1000px/June.1.2015_1000px.jpg"
       );
       setArtistStatement(artistStatements["aMeasureOfTime"]);
-    } else if (collection === "landscapes") {
+    } else if (data.collection === "landscapes") {
       collectionList = landscapeList;
       heroImageSrc = import(
         "../../../../assets/images/landscape/landscape_1000px/LaCienega_1000px.jpg"
       );
       setArtistStatement(artistStatements["landscape"]);
-    } else if (collection === "additional") {
+    } else if (data.collection === "additional") {
       collectionList = additionalList;
       heroImageSrc = import(
         "../../../../assets/images/additional/additional_1000px/LesFleursOmises(TheMissingFlowers)_1000pxSquare.jpg"
       );
       setArtistStatement(artistStatements["additional"]);
     }
-
     heroImageSrc
       .then((source) => {
         const zoomImageDim = 300;
@@ -61,17 +60,16 @@ const CollectionComponent = ({ collection, actions, data }) => {
         setImageList((prevState) => [
           ...prevState,
           <CollectionImage
-            src={source.default}
-            title={image.name}
+            // src={source.default}
+            // imageTitle={image.name}
             key={image.name}
-            data={data}
+            data={{...data, imageTitle: image.name, src: source.default }}
             actions={actions}
           />,
         ]);
       });
     });
   }, []);
-
   return (
     <>
       <StyledArtistStatement>

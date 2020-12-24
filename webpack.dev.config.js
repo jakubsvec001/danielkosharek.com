@@ -16,7 +16,7 @@ const FAVICON = path.resolve(
 );
 
 module.exports = {
-  mode: process.env.NODE_ENV,
+  mode: 'dev',
   entry: ENTRY,
   output: {
     filename: "index.[contenthash].bundle.js",

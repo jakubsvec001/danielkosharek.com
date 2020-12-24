@@ -8,18 +8,16 @@ const FramingPage = lazy(() => import('./FramingPage/FramingPage.jsx'));
 const ContactPage = lazy(() => import('./ContactPage/ContactPage'));
 
 const StyledPage = styled.main`
-  /* border: 1px solid magenta; */
   flex-grow: 1;
   margin-top: 1rem;
   background-color: ${({ theme }) => theme.canvas};
   padding: ${({ theme }) => theme.paddingSmall};
   flex-direction: column;
   display: flex;
-  /* border: 1px solid #ff00ff; */
 `;
 
-const Page = ({ data, actions }) => {
-  
+const PageContainer = ({ data, actions }) => {
+
   return (
     <StyledPage>
       <Suspense fallback={<h1>Loading...</h1>}>
@@ -40,4 +38,4 @@ const Page = ({ data, actions }) => {
   );
 };
 
-export default Page;
+export default PageContainer;

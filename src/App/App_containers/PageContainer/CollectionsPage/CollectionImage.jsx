@@ -1,14 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StyledImageContainer, StyledCollectionsImage, StyledImageCaption } from './imageStyles';
 
-const CollectionImage = ({ src, title, actions }) => {
-  actions.handleModalToggle = () => {}; // delete to implement modal controls onClick
+import Modal from "../../Modal_container/Modal";
+const CollectionImage = ({ data, actions }) => {
+  const [isModal, setIsModal] = useState(false);
+
+  const handleModalToggle = (e) => {
+    e.preventDefault();
+    setIsModal((prevState) => !prevState);
+  };
+
+  data = {
+    ...data,
+    isModal,
+  }
+
+  actions = {
+    ...actions,
+    handleModalToggle,
+  }
 
   return (
-    <StyledImageContainer>
-      <StyledCollectionsImage src={src} alt="a painting by Daniel Kosharek" onClick={actions.handleModalToggle} />
-      <StyledImageCaption>{title}</StyledImageCaption>
-    </StyledImageContainer>
+    <>
+      <Modal data={data} actions={actions}>
+        Text
+      </Modal>
+      <StyledImageContainer>
+        <StyledCollectionsImage src={data.src} alt="a painting by Daniel Kosharek" onClick={(e) => handleModalToggle(e)} />
+        <StyledImageCaption>{data.imageTitle}</StyledImageCaption>
+      </StyledImageContainer>
+    </>
   );
 };
 

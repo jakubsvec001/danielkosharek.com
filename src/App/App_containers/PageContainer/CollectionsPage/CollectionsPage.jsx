@@ -4,7 +4,6 @@ import { Route, Switch } from 'react-router-dom';
 import CollectionComponent from './CollectionComponent';
 import { StyledPage, StyledPageHeader, StyledNavLink, StyledPageTitle, StyledSelector, } from '../PageStyles';
 
-
 const CollectionSelector = () => {
   return (
     <StyledSelector>
@@ -15,7 +14,7 @@ const CollectionSelector = () => {
   );
 };
 
-const CollectionsPage = ({ actions, data }) => {
+const CollectionsPage = ({ data, actions }) => {
   // add state and use useMemo()
   return (
     <StyledPage>
@@ -25,9 +24,9 @@ const CollectionsPage = ({ actions, data }) => {
       </StyledPageHeader>
       <hr />
       <Switch>
-        <Route path="/collections/aMeasureOfTime" component={() => <CollectionComponent collection='aMeasureOfTime' actions={actions} data={data} />} />
-        <Route path="/collections/landscapes" component={() => <CollectionComponent collection='landscapes' actions={actions} data={data} />} />
-        <Route path="/collections/additional" component={() => <CollectionComponent collection='additional' actions={actions} data={data} />} />
+        <Route path="/collections/aMeasureOfTime" component={() => <CollectionComponent actions={actions} data={{ data, collection: 'aMeasureOfTime' }} />} />
+        <Route path="/collections/landscapes" component={() => <CollectionComponent actions={actions} data={{ data, collection: 'landscapes' }} />} />
+        <Route path="/collections/additional" component={() => <CollectionComponent actions={actions} data={{ data, collection: 'additional' }} />} />
       </Switch>
     </StyledPage>
   );
