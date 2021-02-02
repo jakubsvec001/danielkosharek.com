@@ -118,19 +118,11 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "May 21st, 2011 (1)",
+    name: "May 21st, 2011",
     src: {
-      300: import("../../../assets/images/measureOfTime/measureOfTime_300px/May.21.2011_1_300px.jpg"),
-      1000: import("../../../assets/images/measureOfTime/measureOfTime_1000px/May.21.2011_1_1000px.jpg"),
-      2000: import("../../../assets/images/measureOfTime/measureOfTime_2000px/May.21.2011_1_2000px.jpg"),
-    },
-  },
-  {
-    name: "May 21st, 2011 (2)",
-    src: {
-      300: import("../../../assets/images/measureOfTime/measureOfTime_300px/May.21.2011_2_300px.jpg"),
-      1000: import("../../../assets/images/measureOfTime/measureOfTime_1000px/May.21.2011_2_1000px.jpg"),
-      2000: import("../../../assets/images/measureOfTime/measureOfTime_2000px/May.21.2011_2_2000px.jpg"),
+      300: import("../../../assets/images/measureOfTime/measureOfTime_300px/May.21.2011_300px.jpg"),
+      1000: import("../../../assets/images/measureOfTime/measureOfTime_1000px/May.21.2011_1000px.jpg"),
+      2000: import("../../../assets/images/measureOfTime/measureOfTime_2000px/May.21.2011_2000px.jpg"),
     },
   },
   {
