@@ -22,19 +22,19 @@ const CollectionComponent = ({ collection, actions, data }) => {
     if (data.collection === "aMeasureOfTime") {
       collectionList = measureOfTimeList;
       heroImageSrc = import(
-        "../../../../assets/images/measureOfTime/measureOfTime_750px/June.1.2015_750px.jpg"
+        "../../../../assets/images/measureOfTime/measureOfTime_500px/June.1.2015_500px.jpg"
       );
       setArtistStatement(artistStatements["aMeasureOfTime"]);
     } else if (data.collection === "landscapes") {
       collectionList = landscapeList;
       heroImageSrc = import(
-        "../../../../assets/images/landscape/landscape_750px/LaCienega_750px.jpg"
+        "../../../../assets/images/landscape/landscape_500px/LaCienega_500px.jpg"
       );
       setArtistStatement(artistStatements["landscape"]);
     } else if (data.collection === "additional") {
       collectionList = additionalList;
       heroImageSrc = import(
-        "../../../../assets/images/additional/additional_750px/LesFleursOmises(TheMissingFlowers)_750pxSquare.jpg"
+        "../../../../assets/images/additional/additional_500px/LesFleursOmises(TheMissingFlowers)_500pxSquare.jpg"
       );
       setArtistStatement(artistStatements["additional"]);
     }
