@@ -6,16 +6,16 @@ export default {
     statementPart3: "So, listen to the paintings, not me.",
     statementPart4: "— Daniel Kosharek",
   },
-  aMeasureOfTime: {
-    title: "A Measure of Time",
+  MeasureOfTime: {
+    title: "Measure of Time",
     statement: "Marking the passage of time",
   },
   landscape: {
     title: "Landscapes",
     statement: "Impressions of discrete locations",
   },
-  additional:{
-    title: "Additional Paintings",
+  paintingSeries:{
+    title: "Painting Series",
     statement: "A smattering of splatterings",
   },
 };

@@ -9,7 +9,7 @@ import { StyledText, StyledTextBackground, StyledFrameHero, StyledContainer, Sty
 import statements from "../../../../assets/textContent/artistStatements";
 
 const contactHeroSrc = import(
-  "../../../../assets/images/additional/additional_1000px/SelfPortrait_1000px.jpg"
+  "../../../../assets/images/paintingSeries/paintingSeries_1000px/SelfPortrait_1000px.jpg"
 );
 
 const ContactPage = () => {

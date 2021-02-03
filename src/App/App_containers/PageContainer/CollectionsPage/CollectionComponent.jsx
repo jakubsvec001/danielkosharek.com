@@ -4,7 +4,7 @@ import ZoomImg from "react-image-zoom";
 import CollectionImage from "./CollectionImage";
 import {
   measureOfTimeList,
-  additionalList,
+  paintingSeriesList,
   landscapeList,
 } from "../../utilities/imageCollections";
 import artistStatements from "../../../../assets/textContent/artistStatements";
@@ -19,24 +19,24 @@ const CollectionComponent = ({ collection, actions, data }) => {
     let collectionList;
     let heroImageSrc;
     let artistStatement;
-    if (data.collection === "aMeasureOfTime") {
+    if (data.collection === "MeasureOfTime") {
       collectionList = measureOfTimeList;
       heroImageSrc = import(
         "../../../../assets/images/measureOfTime/measureOfTime_500px/June.1.2015_500px.jpg"
       );
-      setArtistStatement(artistStatements["aMeasureOfTime"]);
+      setArtistStatement(artistStatements["MeasureOfTime"]);
     } else if (data.collection === "landscapes") {
       collectionList = landscapeList;
       heroImageSrc = import(
         "../../../../assets/images/landscape/landscape_500px/LaCienega_500px.jpg"
       );
       setArtistStatement(artistStatements["landscape"]);
-    } else if (data.collection === "additional") {
-      collectionList = additionalList;
+    } else if (data.collection === "paintingSeries") {
+      collectionList = paintingSeriesList;
       heroImageSrc = import(
-        "../../../../assets/images/additional/additional_500px/LesFleursOmises(TheMissingFlowers)_500pxSquare.jpg"
+        "../../../../assets/images/paintingSeries/paintingSeries_500px/LesFleursOmises(TheMissingFlowers)_500pxSquare.jpg"
       );
-      setArtistStatement(artistStatements["additional"]);
+      setArtistStatement(artistStatements["paintingSeries"]);
     }
     heroImageSrc
       .then((source) => {

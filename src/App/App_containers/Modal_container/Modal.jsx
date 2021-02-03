@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { StyledModalBackdrop } from './ModalStyle';
 import {
   measureOfTimeList,
-  additionalList,
+  paintingSeriesList,
   landscapeList,
 } from "../utilities/imageCollections";
 
@@ -26,12 +26,12 @@ const Modal = ({ data, actions, children }) => {
   const modalImageSrc = () => {
     const collection = data.collection;
     let src;
-    if (collection === 'aMeasureOfTime') {
+    if (collection === 'MeasureOfTime') {
       src = measureOfTimeList.filter((item) => item.name === data.imageTitle);
     } else if (collection === 'landscapes') {
       src = landscapeList.filter((item) => item.name === data.imageTitle);
-    } else if (collection === 'additional') {
-      src = additionalList.filter((item) => item.name === data.imageTitle);
+    } else if (collection === 'paintingSeries') {
+      src = paintingSeriesList.filter((item) => item.name === data.imageTitle);
     }
     return src[0];
   };

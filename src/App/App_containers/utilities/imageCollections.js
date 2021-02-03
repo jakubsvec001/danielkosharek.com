@@ -66,32 +66,32 @@ export const landscapeList = [
 
 
 
-export const additionalList = [
+export const paintingSeriesList = [
   {
     name: "Les Fleurs Omises (The Missing Flowers)",
     src: {
-      300: import("../../../assets/images/additional/additional_300px/LesFleursOmises(TheMissingFlowers)_300px.jpg"),
-      750: import("../../../assets/images/additional/additional_750px/LesFleursOmises(TheMissingFlowers)_750px.jpg"),
-      1000: import("../../../assets/images/additional/additional_1000px/LesFleursOmises(TheMissingFlowers)_1000px.jpg"),
-      2000: import("../../../assets/images/additional/additional_2000px/LesFleursOmises(TheMissingFlowers)_2000px.jpg"),
+      300: import("../../../assets/images/paintingSeries/paintingSeries_300px/LesFleursOmises(TheMissingFlowers)_300px.jpg"),
+      750: import("../../../assets/images/paintingSeries/paintingSeries_750px/LesFleursOmises(TheMissingFlowers)_750px.jpg"),
+      1000: import("../../../assets/images/paintingSeries/paintingSeries_1000px/LesFleursOmises(TheMissingFlowers)_1000px.jpg"),
+      2000: import("../../../assets/images/paintingSeries/paintingSeries_2000px/LesFleursOmises(TheMissingFlowers)_2000px.jpg"),
     },
   },
   {
     name: "Self Portrait",
     src: {
-      300: import("../../../assets/images/additional/additional_300px/SelfPortrait_300px.jpg"),
-      750: import("../../../assets/images/additional/additional_750px/SelfPortrait_750px.jpg"),
-      1000: import("../../../assets/images/additional/additional_1000px/SelfPortrait_1000px.jpg"),
-      2000: import("../../../assets/images/additional/additional_2000px/SelfPortrait_2000px.jpg"),
+      300: import("../../../assets/images/paintingSeries/paintingSeries_300px/SelfPortrait_300px.jpg"),
+      750: import("../../../assets/images/paintingSeries/paintingSeries_750px/SelfPortrait_750px.jpg"),
+      1000: import("../../../assets/images/paintingSeries/paintingSeries_1000px/SelfPortrait_1000px.jpg"),
+      2000: import("../../../assets/images/paintingSeries/paintingSeries_2000px/SelfPortrait_2000px.jpg"),
     },
   },
   {
-    name: "Storyboard Page",
+    name: "Storyboards",
     src: {
-      300: import("../../../assets/images/additional/additional_300px/StoryBoardPage_300px.jpg"),
-      750: import("../../../assets/images/additional/additional_750px/StoryBoardPage_750px.jpg"),
-      1000: import("../../../assets/images/additional/additional_1000px/StoryBoardPage_1000px.jpg"),
-      2000: import("../../../assets/images/additional/additional_2000px/StoryBoardPage_2000px.jpg"),
+      300: import("../../../assets/images/paintingSeries/paintingSeries_300px/StoryBoardPage_300px.jpg"),
+      750: import("../../../assets/images/paintingSeries/paintingSeries_750px/StoryBoardPage_750px.jpg"),
+      1000: import("../../../assets/images/paintingSeries/paintingSeries_1000px/StoryBoardPage_1000px.jpg"),
+      2000: import("../../../assets/images/paintingSeries/paintingSeries_2000px/StoryBoardPage_2000px.jpg"),
     },
   },
 ];
@@ -327,10 +327,46 @@ export const measureOfTimeList = [
   {
     name: "(Sold)",
     src: {
-      300: import("../../../assets/images/measureOfTime/measureOfTime_300px/(Sold)_300px.jpg"),
-      750: import("../../../assets/images/measureOfTime/measureOfTime_750px/(Sold)_750px.jpg"),
-      1000: import("../../../assets/images/measureOfTime/measureOfTime_1000px/(Sold)_1000px.jpg"),
-      2000: import("../../../assets/images/measureOfTime/measureOfTime_2000px/(Sold)_2000px.jpg"),
+      300: import("../../../assets/images/measureOfTime/measureOfTime_300px/SOLD(0)_300px.jpg"),
+      750: import("../../../assets/images/measureOfTime/measureOfTime_750px/SOLD(0)_750px.jpg"),
+      1000: import("../../../assets/images/measureOfTime/measureOfTime_1000px/SOLD(0)_1000px.jpg"),
+      2000: import("../../../assets/images/measureOfTime/measureOfTime_2000px/SOLD(0)_2000px.jpg"),
+    },
+  },
+  {
+    name: "(Sold)",
+    src: {
+      300: import("../../../assets/images/measureOfTime/measureOfTime_300px/SOLD(1)_300px.jpg"),
+      750: import("../../../assets/images/measureOfTime/measureOfTime_750px/SOLD(1)_750px.jpg"),
+      1000: import("../../../assets/images/measureOfTime/measureOfTime_1000px/SOLD(1)_1000px.jpg"),
+      2000: import("../../../assets/images/measureOfTime/measureOfTime_2000px/SOLD(1)_2000px.jpg"),
+    },
+  },
+  {
+    name: "(Sold)",
+    src: {
+      300: import("../../../assets/images/measureOfTime/measureOfTime_300px/SOLD(2)_300px.jpg"),
+      750: import("../../../assets/images/measureOfTime/measureOfTime_750px/SOLD(2)_750px.jpg"),
+      1000: import("../../../assets/images/measureOfTime/measureOfTime_1000px/SOLD(2)_1000px.jpg"),
+      2000: import("../../../assets/images/measureOfTime/measureOfTime_2000px/SOLD(2)_2000px.jpg"),
+    },
+  },
+  {
+    name: "(Sold)",
+    src: {
+      300: import("../../../assets/images/measureOfTime/measureOfTime_300px/SOLD(3)_300px.jpg"),
+      750: import("../../../assets/images/measureOfTime/measureOfTime_750px/SOLD(3)_750px.jpg"),
+      1000: import("../../../assets/images/measureOfTime/measureOfTime_1000px/SOLD(3)_1000px.jpg"),
+      2000: import("../../../assets/images/measureOfTime/measureOfTime_2000px/SOLD(3)_2000px.jpg"),
+    },
+  },
+  {
+    name: "(Sold)",
+    src: {
+      300: import("../../../assets/images/measureOfTime/measureOfTime_300px/SOLD(4)_300px.jpg"),
+      750: import("../../../assets/images/measureOfTime/measureOfTime_750px/SOLD(4)_750px.jpg"),
+      1000: import("../../../assets/images/measureOfTime/measureOfTime_1000px/SOLD(4)_1000px.jpg"),
+      2000: import("../../../assets/images/measureOfTime/measureOfTime_2000px/SOLD(4)_2000px.jpg"),
     },
   },
 ];

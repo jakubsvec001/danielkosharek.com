@@ -46,7 +46,7 @@ const FramingPage = () => {
       <hr />
 
       {heroImageComponent}
-    <StyledText><StyledBackgroundSpan>Paintings are available in NUDE, or framed in STEEL</StyledBackgroundSpan></StyledText>
+    <StyledText><StyledBackgroundSpan>All paintings are framed in steel</StyledBackgroundSpan></StyledText>
     <hr />
     </StyledPage>
   );
