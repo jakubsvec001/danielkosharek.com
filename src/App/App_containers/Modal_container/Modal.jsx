@@ -37,7 +37,7 @@ const Modal = ({ data, actions, children }) => {
   };
 
   useEffect(() => {
-    modalImageSrc().src[1000].then(source => {
+    modalImageSrc().src[750].then(source => {
       setModalImageComponent(() => {
         return <StyledModalImage src={source.default} alt="a painting by Daniel Kosharek" />
       });

@@ -30,7 +30,7 @@ export const landscapeList = [
     name: "Message In The Sky",
     src: {
       300: import("../../../assets/images/landscape/landscape_300px/MessageInTheSky_300px.jpg"),
-      750: import("../../../assets/images/landscape/landscape_300px/MessageInTheSky_750px.jpg"),
+      750: import("../../../assets/images/landscape/landscape_750px/MessageInTheSky_750px.jpg"),
       1000: import("../../../assets/images/landscape/landscape_1000px/MessageInTheSky_1000px.jpg"),
       2000: import("../../../assets/images/landscape/landscape_2000px/MessageInTheSky_2000px.jpg"),
     },
@@ -301,7 +301,7 @@ export const measureOfTimeList = [
     name: "May 22nd, 2018 (2)",
     src: {
       300: import("../../../assets/images/measureOfTime/measureOfTime_300px/May.22.2018_2_300px.jpg"),
-      750: import("../../../assets/images/measureOfTime/measureOfTime_300px/May.22.2018_2_750px.jpg"),
+      750: import("../../../assets/images/measureOfTime/measureOfTime_750px/May.22.2018_2_750px.jpg"),
       1000: import("../../../assets/images/measureOfTime/measureOfTime_1000px/May.22.2018_2_1000px.jpg"),
       2000: import("../../../assets/images/measureOfTime/measureOfTime_2000px/May.22.2018_2_2000px.jpg"),
     },
