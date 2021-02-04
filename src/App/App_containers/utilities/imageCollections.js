@@ -244,15 +244,6 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "December 17th, 2016",
-    src: {
-      300: import("../../../assets/images/measureOfTime/measureOfTime_300px/December.17.2016_300px.jpg"),
-      750: import("../../../assets/images/measureOfTime/measureOfTime_750px/December.17.2016_750px.jpg"),
-      1000: import("../../../assets/images/measureOfTime/measureOfTime_1000px/December.17.2016_1000px.jpg"),
-      2000: import("../../../assets/images/measureOfTime/measureOfTime_2000px/December.17.2016_2000px.jpg"),
-    },
-  },
-  {
     name: "June 14th, 2017",
     src: {
       300: import("../../../assets/images/measureOfTime/measureOfTime_300px/June.14.2017_300px.jpg"),
@@ -367,6 +358,15 @@ export const measureOfTimeList = [
       750: import("../../../assets/images/measureOfTime/measureOfTime_750px/SOLD(4)_750px.jpg"),
       1000: import("../../../assets/images/measureOfTime/measureOfTime_1000px/SOLD(4)_1000px.jpg"),
       2000: import("../../../assets/images/measureOfTime/measureOfTime_2000px/SOLD(4)_2000px.jpg"),
+    },
+  },
+  {
+    name: "(Sold)",
+    src: {
+      300: import("../../../assets/images/measureOfTime/measureOfTime_300px/SOLD(5)_300px.jpg"),
+      750: import("../../../assets/images/measureOfTime/measureOfTime_750px/SOLD(5)_750px.jpg"),
+      1000: import("../../../assets/images/measureOfTime/measureOfTime_1000px/SOLD(5)_1000px.jpg"),
+      2000: import("../../../assets/images/measureOfTime/measureOfTime_2000px/SOLD(5)_2000px.jpg"),
     },
   },
 ];

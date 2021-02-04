@@ -15,8 +15,8 @@ const StyledFooter = styled.footer`
 
 const FooterContainer = () => {
   return (
-    <StyledFooter as="h5">
-      © Daniel Kosharek {new Date().getFullYear()}
+    <StyledFooter as="h7">
+      © Daniel Kosharek {new Date().getFullYear()}   |    photography by Mark Roth
     </StyledFooter>
   );
 };
