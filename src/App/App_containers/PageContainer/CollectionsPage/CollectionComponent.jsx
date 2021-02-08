@@ -3,7 +3,7 @@ import ZoomImg from "react-image-zoom";
 
 import CollectionImage from "./CollectionImage";
 import {
-  measureOfTimeList,
+  measureOfDaysList,
   paintingSeriesList,
   landscapeList,
 } from "../../utilities/imageCollections";
@@ -19,12 +19,12 @@ const CollectionComponent = ({ collection, actions, data }) => {
     let collectionList;
     let heroImageSrc;
     let artistStatement;
-    if (data.collection === "MeasureOfTime") {
-      collectionList = measureOfTimeList;
+    if (data.collection === "MeasureOfDays") {
+      collectionList = measureOfDaysList;
       heroImageSrc = import(
-        "../../../../assets/images/measureOfTime/measureOfTime_500px/June.1.2015_500px.jpg"
+        "../../../../assets/images/measureOfDays/measureOfDays_500px/June.1.2015_500px.jpg"
       );
-      setArtistStatement(artistStatements["MeasureOfTime"]);
+      setArtistStatement(artistStatements["MeasureOfDays"]);
     } else if (data.collection === "landscapes") {
       collectionList = landscapeList;
       heroImageSrc = import(

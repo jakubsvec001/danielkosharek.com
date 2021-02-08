@@ -7,7 +7,7 @@ import { StyledPage, StyledPageHeader, StyledNavLink, StyledPageTitle, StyledSel
 const CollectionSelector = () => {
   return (
     <StyledSelector>
-      <StyledNavLink to="/collections/MeasureOfTime" replace>Measure of Time</StyledNavLink>
+      <StyledNavLink to="/collections/MeasureOfDays" replace>Measure Of Days</StyledNavLink>
       <StyledNavLink to="/collections/landscapes" replace>Landscapes</StyledNavLink>
       <StyledNavLink to="/collections/paintingSeries" replace>Painting Series</StyledNavLink>
     </StyledSelector>
@@ -24,7 +24,7 @@ const CollectionsPage = ({ data, actions }) => {
       </StyledPageHeader>
       <hr />
       <Switch>
-        <Route path="/collections/MeasureOfTime" component={() => <CollectionComponent actions={actions} data={{ data, collection: 'MeasureOfTime' }} />} />
+        <Route path="/collections/MeasureOfDays" component={() => <CollectionComponent actions={actions} data={{ data, collection: 'MeasureOfDays' }} />} />
         <Route path="/collections/landscapes" component={() => <CollectionComponent actions={actions} data={{ data, collection: 'landscapes' }} />} />
         <Route path="/collections/paintingSeries" component={() => <CollectionComponent actions={actions} data={{ data, collection: 'paintingSeries' }} />} />
       </Switch>

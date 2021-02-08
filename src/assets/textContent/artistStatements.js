@@ -6,8 +6,8 @@ export default {
     statementPart3: "So, listen to the paintings, not me.",
     statementPart4: "— Daniel Kosharek",
   },
-  MeasureOfTime: {
-    title: "Measure of Time",
+  MeasureOfDays: {
+    title: "Measure Of Days",
     statement: "Marking the passage of time",
   },
   landscape: {
