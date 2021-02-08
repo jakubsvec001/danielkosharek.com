@@ -86,6 +86,15 @@ export const paintingSeriesList = [
     },
   },
   {
+    name: "COVID Days",
+    src: {
+      300: import("../../../assets/images/paintingSeries/paintingSeries_300px/CovidDays_300px.jpg"),
+      750: import("../../../assets/images/paintingSeries/paintingSeries_750px/CovidDays_750px.jpg"),
+      1000: import("../../../assets/images/paintingSeries/paintingSeries_1000px/CovidDays_1000px.jpg"),
+      2000: import("../../../assets/images/paintingSeries/paintingSeries_2000px/CovidDays_2000px.jpg"),
+    }
+  },
+  {
     name: "Storyboards",
     src: {
       300: import("../../../assets/images/paintingSeries/paintingSeries_300px/StoryBoardPage_300px.jpg"),
@@ -280,22 +289,13 @@ export const measureOfTimeList = [
     },
   },
   {
-    name: "May 22nd, 2018 (1)",
+    name: "May 22nd, 2018",
     src: {
-      300: import("../../../assets/images/measureOfTime/measureOfTime_300px/May.22.2018_1_300px.jpg"),
-      750: import("../../../assets/images/measureOfTime/measureOfTime_750px/May.22.2018_1_750px.jpg"),
-      1000: import("../../../assets/images/measureOfTime/measureOfTime_1000px/May.22.2018_1_1000px.jpg"),
-      2000: import("../../../assets/images/measureOfTime/measureOfTime_2000px/May.22.2018_1_2000px.jpg"),
+      300: import("../../../assets/images/measureOfTime/measureOfTime_300px/May.22.2018_300px.jpg"),
+      750: import("../../../assets/images/measureOfTime/measureOfTime_750px/May.22.2018_750px.jpg"),
+      1000: import("../../../assets/images/measureOfTime/measureOfTime_1000px/May.22.2018_1000px.jpg"),
+      2000: import("../../../assets/images/measureOfTime/measureOfTime_2000px/May.22.2018_2000px.jpg"),
     }
-  },
-  {
-    name: "May 22nd, 2018 (2)",
-    src: {
-      300: import("../../../assets/images/measureOfTime/measureOfTime_300px/May.22.2018_2_300px.jpg"),
-      750: import("../../../assets/images/measureOfTime/measureOfTime_750px/May.22.2018_2_750px.jpg"),
-      1000: import("../../../assets/images/measureOfTime/measureOfTime_1000px/May.22.2018_2_1000px.jpg"),
-      2000: import("../../../assets/images/measureOfTime/measureOfTime_2000px/May.22.2018_2_2000px.jpg"),
-    },
   },
   {
     name: "June 4th, 2019",
@@ -367,6 +367,15 @@ export const measureOfTimeList = [
       750: import("../../../assets/images/measureOfTime/measureOfTime_750px/SOLD(5)_750px.jpg"),
       1000: import("../../../assets/images/measureOfTime/measureOfTime_1000px/SOLD(5)_1000px.jpg"),
       2000: import("../../../assets/images/measureOfTime/measureOfTime_2000px/SOLD(5)_2000px.jpg"),
+    },
+  },
+  {
+    name: "(Sold)",
+    src: {
+      300: import("../../../assets/images/measureOfTime/measureOfTime_300px/SOLD(6)_300px.jpg"),
+      750: import("../../../assets/images/measureOfTime/measureOfTime_750px/SOLD(6)_750px.jpg"),
+      1000: import("../../../assets/images/measureOfTime/measureOfTime_1000px/SOLD(6)_1000px.jpg"),
+      2000: import("../../../assets/images/measureOfTime/measureOfTime_2000px/SOLD(6)_2000px.jpg"),
     },
   },
 ];
