@@ -96,7 +96,7 @@ export const measureOfDaysList = [
     },
   },
   {
-    name: "November 11th, 2015 (sold)",
+    name: "November 19th, 2015 (sold)",
     date: new Date(2015,11,19),
     isSold: true,
     key: 1,
