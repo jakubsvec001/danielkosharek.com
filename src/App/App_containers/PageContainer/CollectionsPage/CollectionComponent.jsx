@@ -20,7 +20,12 @@ const CollectionComponent = ({ collection, actions, data }) => {
     let heroImageSrc;
     let artistStatement;
     if (data.collection === "MeasureOfDays") {
-      collectionList = measureOfDaysList;
+      console.log(measureOfDaysList)
+      collectionList = measureOfDaysList.sort((a, b) => {
+        console.log(a.date < b.date);
+        return a.date < b.date;
+      });
+      console.log("1------------------------\n", collectionList)
       heroImageSrc = import(
         "../../../../assets/images/measureOfDays/measureOfDays_500px/June.1.2015_500px.jpg"
       );
