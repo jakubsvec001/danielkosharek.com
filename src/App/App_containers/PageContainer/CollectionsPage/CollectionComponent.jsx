@@ -22,7 +22,6 @@ const CollectionComponent = ({ collection, actions, data }) => {
     if (data.collection === "MeasureOfDays") {
       console.log(measureOfDaysList)
       collectionList = measureOfDaysList.sort((a, b) => {
-        console.log(a.date < b.date);
         return a.date < b.date;
       });
       console.log("1------------------------\n", collectionList)
@@ -60,18 +59,34 @@ const CollectionComponent = ({ collection, actions, data }) => {
         ));
       })
       .catch((e) => console.error(e));
-    collectionList.forEach((image) => {
-      image.src["300"].then((source) => {
-        setImageList((prevState) => [
-          ...prevState,
-          <CollectionImage
-            key={image.name}
-            data={{...data, imageTitle: image.name, src: source.default }}
-            actions={actions}
-          />,
-        ]);
-      });
-    });
+    if (data.collection === "MeasureOfDays") {
+      collectionList.sort((a,b) => a.date > b.date).forEach((image) => {
+        image.src["300"].then((source) => {
+          setImageList((prevState) => [
+            ...prevState,
+            <CollectionImage
+              key={image.name}
+              data={{...data, imageTitle: image.name, src: source.default }}
+              actions={actions}
+            />,
+          ]);
+        });
+      })
+    } else {
+      collectionList.forEach((image) => {
+        image.src["300"].then((source) => {
+          setImageList((prevState) => [
+            ...prevState,
+            <CollectionImage
+              key={image.name}
+              data={{...data, imageTitle: image.name, src: source.default }}
+              actions={actions}
+            />,
+          ]);
+        });
+      })
+      
+    }
   }, []);
   return (
     <>
