@@ -9,9 +9,8 @@ import { StyledText, StyledTextBackground, StyledFrameHero, StyledContainer, Sty
 import statements from "../../../../assets/textContent/artistStatements";
 
 const contactHeroSrc = import(
-  "../../../../assets/images/paintingSeries/paintingSeries_1000px/SelfPortrait_1000px.jpg"
+  "../../../../assets/images/landscape/landscape_750px/RoadToRoy_750px.jpg"
 );
-
 const ContactPage = () => {
   const [heroImageComponent, setHeroImageComponent] = useState();
   const [zoomComponent, setZoomComponent] = useState();
@@ -34,18 +33,12 @@ const ContactPage = () => {
       </StyledPageHeader>
       <hr />
       <StyledContainer>
-        {heroImageComponent}
         <StyledTextContainer>
-          <h2>Daniel Kosharek</h2>
-          <StyledText>{statements.personalStatement.statementPart1}</StyledText><hr />
-          <StyledText>{statements.personalStatement.statementPart2}</StyledText><hr />
-          <StyledText>{statements.personalStatement.statementPart3}</StyledText><hr />
-          <StyledText>{statements.personalStatement.statementPart4}</StyledText><hr />
-          <hr />
           <StyledText>For information about sales, contact Daniel at: </StyledText><hr/>
           <br />
           <StyledTextBackground><em>danielkosharek (at) gmail (dot) com</em></StyledTextBackground>
         </StyledTextContainer>
+        {heroImageComponent}
       </StyledContainer>
       <hr />
     </StyledPage>

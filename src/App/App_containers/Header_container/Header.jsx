@@ -48,6 +48,7 @@ const HeaderContainer = () => {
       <StyledNav>
         <StyledNavLink to="/collections">Collections</StyledNavLink>
         <StyledNavLink to="/framing">Framing</StyledNavLink>
+        <StyledNavLink to="/about">About</StyledNavLink>
         <StyledNavLink to="/contact">Contact</StyledNavLink>
       </StyledNav>
     </StyledHeader>
