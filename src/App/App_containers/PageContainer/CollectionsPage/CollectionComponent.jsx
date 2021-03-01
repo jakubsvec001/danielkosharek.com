@@ -65,8 +65,6 @@ const CollectionComponent = ({ collection, actions, data }) => {
         setImageList((prevState) => [
           ...prevState,
           <CollectionImage
-            // src={source.default}
-            // imageTitle={image.name}
             key={image.name}
             data={{...data, imageTitle: image.name, src: source.default }}
             actions={actions}
