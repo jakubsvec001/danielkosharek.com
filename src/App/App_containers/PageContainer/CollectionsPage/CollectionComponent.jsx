@@ -58,7 +58,13 @@ const CollectionComponent = ({ collection, actions, data }) => {
       })
       .catch((e) => console.error(e));
     if (data.collection === "MeasureOfDays") {
-      collectionList.sort((a,b) => a.date > b.date).forEach((image) => {
+      collectionList.sort((a,b) => {
+        if (a.date < b.date) {
+          return -1;
+        } else {
+          return 1;
+        }
+      }).forEach((image) => {
         image.src["300"].then((source) => {
           setImageList((prevState) => [
             ...prevState,
