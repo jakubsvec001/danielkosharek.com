@@ -87,70 +87,6 @@ export const paintingSeriesList = [
 
 export const measureOfDaysList = [
   {
-    name: "November 20th, 2016 (sold)",
-    date: new Date(2016,11,20),
-    isSold: true,
-    src: {
-      300: import("../../../assets/images/measureOfDays/SOLD(0)_300px.jpg"),
-      750: import("../../../assets/images/measureOfDays/SOLD(0)_750px.jpg"),
-    },
-  },
-  {
-    name: "November 19th, 2015 (sold)",
-    date: new Date(2015,11,19),
-    isSold: true,
-    key: 1,
-    src: {
-      300: import("../../../assets/images/measureOfDays/SOLD(1)_300px.jpg"),
-      750: import("../../../assets/images/measureOfDays/SOLD(1)_750px.jpg"),
-    },
-  },
-  {
-    name: "August 6th, 2017 (sold)",
-    date: new Date(2017,8,6),
-    isSold: true,
-    src: {
-      300: import("../../../assets/images/measureOfDays/SOLD(2)_300px.jpg"),
-      750: import("../../../assets/images/measureOfDays/SOLD(2)_750px.jpg"),
-    },
-  },
-  {
-    name: "July 31st, 2012 (sold)",
-    date: new Date(2012,7,31),
-    isSold: true,
-    src: {
-      300: import("../../../assets/images/measureOfDays/SOLD(3)_300px.jpg"),
-      750: import("../../../assets/images/measureOfDays/SOLD(3)_750px.jpg"),
-    },
-  },
-  {
-    name: "March 15th, 2019 (sold)",
-    date: new Date(2019,3,15),
-    isSold: true,
-    src: {
-      300: import("../../../assets/images/measureOfDays/SOLD(4)_300px.jpg"),
-      750: import("../../../assets/images/measureOfDays/SOLD(4)_750px.jpg"),
-    },
-  },
-  {
-    name: "May 26th, 2018 (sold)",
-    date: new Date(2018,5,26),
-    isSold: true,
-    src: {
-      300: import("../../../assets/images/measureOfDays/SOLD(5)_300px.jpg"),
-      750: import("../../../assets/images/measureOfDays/SOLD(5)_750px.jpg"),
-    },
-  },
-  {
-    name: "September 3rd, 2018 (sold)",
-    date: new Date(2018,9,3),
-    isSold: true,
-    src: {
-      300: import("../../../assets/images/measureOfDays/SOLD(6)_300px.jpg"),
-      750: import("../../../assets/images/measureOfDays/SOLD(6)_750px.jpg"),
-    },
-  },
-  {
     name: "April 9th, 2011",
     date: new Date(2011,4,9),
     isSold: false,
@@ -355,6 +291,70 @@ export const measureOfDaysList = [
     src: {
       300: import("../../../assets/images/measureOfDays/June.25.2019_300px.jpg"),
       750: import("../../../assets/images/measureOfDays/June.25.2019_750px.jpg"),
+    },
+  },
+  {
+    name: "November 20th, 2016 (sold)",
+    date: new Date(2016,11,20),
+    isSold: true,
+    src: {
+      300: import("../../../assets/images/measureOfDays/SOLD(0)_300px.jpg"),
+      750: import("../../../assets/images/measureOfDays/SOLD(0)_750px.jpg"),
+    },
+  },
+  {
+    name: "November 19th, 2015 (sold)",
+    date: new Date(2015,11,19),
+    isSold: true,
+    key: 1,
+    src: {
+      300: import("../../../assets/images/measureOfDays/SOLD(1)_300px.jpg"),
+      750: import("../../../assets/images/measureOfDays/SOLD(1)_750px.jpg"),
+    },
+  },
+  {
+    name: "August 6th, 2017 (sold)",
+    date: new Date(2017,8,6),
+    isSold: true,
+    src: {
+      300: import("../../../assets/images/measureOfDays/SOLD(2)_300px.jpg"),
+      750: import("../../../assets/images/measureOfDays/SOLD(2)_750px.jpg"),
+    },
+  },
+  {
+    name: "July 31st, 2012 (sold)",
+    date: new Date(2012,7,31),
+    isSold: true,
+    src: {
+      300: import("../../../assets/images/measureOfDays/SOLD(3)_300px.jpg"),
+      750: import("../../../assets/images/measureOfDays/SOLD(3)_750px.jpg"),
+    },
+  },
+  {
+    name: "March 15th, 2019 (sold)",
+    date: new Date(2019,3,15),
+    isSold: true,
+    src: {
+      300: import("../../../assets/images/measureOfDays/SOLD(4)_300px.jpg"),
+      750: import("../../../assets/images/measureOfDays/SOLD(4)_750px.jpg"),
+    },
+  },
+  {
+    name: "May 26th, 2018 (sold)",
+    date: new Date(2018,5,26),
+    isSold: true,
+    src: {
+      300: import("../../../assets/images/measureOfDays/SOLD(5)_300px.jpg"),
+      750: import("../../../assets/images/measureOfDays/SOLD(5)_750px.jpg"),
+    },
+  },
+  {
+    name: "September 3rd, 2018 (sold)",
+    date: new Date(2018,9,3),
+    isSold: true,
+    src: {
+      300: import("../../../assets/images/measureOfDays/SOLD(6)_300px.jpg"),
+      750: import("../../../assets/images/measureOfDays/SOLD(6)_750px.jpg"),
     },
   },
 ];
