@@ -20,9 +20,7 @@ const CollectionComponent = ({ collection, actions, data }) => {
     let heroImageSrc;
     let artistStatement;
     if (data.collection === "MeasureOfDays") {
-      console.log(measureOfDaysList)
       collectionList = measureOfDaysList
-      console.log("1------------------------\n", collectionList)
       heroImageSrc = import(
         "../../../../assets/images/measureOfDays/measureOfDays_500px/June.1.2015_500px.jpg"
       );
@@ -58,19 +56,25 @@ const CollectionComponent = ({ collection, actions, data }) => {
       })
       .catch((e) => console.error(e));
     if (data.collection === "MeasureOfDays") {
-      collectionList.sort((a,b) => {
+      const sortedList = collectionList.slice();
+      console.log(sortedList)
+      sortedList.sort((a,b) => {
+        let result;
         if (a.date < b.date) {
-          return -1;
+          result = -1;
         } else {
-          return 1;
+          result = 1;
         }
-      }).forEach((image) => {
+        return result;
+      })
+      console.log(collectionList)
+      sortedList.forEach((image) => {
         image.src["300"].then((source) => {
           setImageList((prevState) => [
             ...prevState,
             <CollectionImage
               key={image.name}
-              data={{...data, imageTitle: image.name, src: source.default }}
+              data={{...data, collectionList, imageTitle: image.name, src: source.default }}
               actions={actions}
             />,
           ]);
@@ -79,11 +83,12 @@ const CollectionComponent = ({ collection, actions, data }) => {
     } else {
       collectionList.forEach((image) => {
         image.src["300"].then((source) => {
+          console.log(data)
           setImageList((prevState) => [
             ...prevState,
             <CollectionImage
               key={image.name}
-              data={{...data, imageTitle: image.name, src: source.default }}
+              data={{...data, collectionList, imageTitle: image.name, src: source.default }}
               actions={actions}
             />,
           ]);

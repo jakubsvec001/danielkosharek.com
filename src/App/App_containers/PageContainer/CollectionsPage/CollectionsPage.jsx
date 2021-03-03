@@ -20,7 +20,7 @@ const CollectionsPage = ({ data, actions }) => {
     <StyledPage>
       <StyledPageHeader>
         <StyledPageTitle>COLLECTIONS</StyledPageTitle>
-        <CollectionSelector />
+         <CollectionSelector />
       </StyledPageHeader>
       <hr />
       <Switch>

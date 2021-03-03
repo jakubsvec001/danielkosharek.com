@@ -29,3 +29,11 @@ display: flex;
 width: 100%;
 padding: 4px;
 `;
+
+export const StyledInfoBox = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4px;
+  align-items: center;
+`;

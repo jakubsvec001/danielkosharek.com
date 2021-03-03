@@ -294,7 +294,7 @@ export const measureOfDaysList = [
     },
   },
   {
-    name: "November 20th, 2016 (sold)",
+    name: "November 20th, 2016",
     date: new Date(2016,11,20),
     isSold: true,
     src: {
@@ -303,7 +303,7 @@ export const measureOfDaysList = [
     },
   },
   {
-    name: "November 19th, 2015 (sold)",
+    name: "November 19th, 2015",
     date: new Date(2015,11,19),
     isSold: true,
     key: 1,
@@ -313,7 +313,7 @@ export const measureOfDaysList = [
     },
   },
   {
-    name: "August 6th, 2017 (sold)",
+    name: "August 6th, 2017",
     date: new Date(2017,8,6),
     isSold: true,
     src: {
@@ -322,7 +322,7 @@ export const measureOfDaysList = [
     },
   },
   {
-    name: "July 31st, 2012 (sold)",
+    name: "July 31st, 2012",
     date: new Date(2012,7,31),
     isSold: true,
     src: {
@@ -331,7 +331,7 @@ export const measureOfDaysList = [
     },
   },
   {
-    name: "March 15th, 2019 (sold)",
+    name: "March 15th, 2019",
     date: new Date(2019,3,15),
     isSold: true,
     src: {
@@ -340,7 +340,7 @@ export const measureOfDaysList = [
     },
   },
   {
-    name: "May 26th, 2018 (sold)",
+    name: "May 26th, 2018",
     date: new Date(2018,5,26),
     isSold: true,
     src: {
@@ -349,7 +349,7 @@ export const measureOfDaysList = [
     },
   },
   {
-    name: "September 3rd, 2018 (sold)",
+    name: "September 3rd, 2018",
     date: new Date(2018,9,3),
     isSold: true,
     src: {
